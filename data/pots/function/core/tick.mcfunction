@@ -21,7 +21,7 @@ execute if score attemptPermitted var matches 1.. run return run scoreboard play
 scoreboard players reset growPermitted var
 
 # Rolling the dice and modifying the result.
-execute store result score cap var run gamerule randomTickSpeed
+execute store result score cap var run gamerule random_tick_speed
 execute if score cap var matches 0 run return 0
 execute store result score modifier var run function pots:util/fetch_speed_modifier
 execute store result score roll var run function pots:core/roll
