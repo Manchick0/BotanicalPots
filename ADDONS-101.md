@@ -7,6 +7,9 @@ Supporting third-party mods is virtually impossible in a **single datapack**. To
 
 This article describes how to work with this facade to add support for a third-party modification.
 
+> [!NOTE]
+> In order for Botanical Pots to support a plant, one should be able to insert that plant in a **flower pot**. That too has to be provided by the modification.
+
 ## Concept
 
 Most of the logic in a datapack is written in terms of **functions**. Similary to [functions in CS](https://en.wikipedia.org/wiki/Function_(computer_programming)), a function is a reusable unit that contains a serious of **commands** that are run consequtively. Botanical Pots is no exception; it too is written in functions.
@@ -187,6 +190,6 @@ execute if block ~ ~ ~ example:plant run return run function pots:magnifying_gla
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \
     { translate: "item.pots.magnifying_glass.none", color: "gray", font: "minecraft:default", italic: false } \
 ]]}
-execute if block ~ ~ ~ example:plant run return run ...
+execute if block ~ ~ ~ example:potted_plant run return run ...
 return 0
 ```
