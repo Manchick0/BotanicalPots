@@ -1,1 +1,1 @@
-$execute align xyz run particle falling_dust{block_state: "$(state)"} ~.5 ~.5 ~.5 0.3 0.3 0.3 0.1 10 normal
+$particle $(type)$(options) ~ ~ ~ 0.3 0.3 0.3 0.1 10 normal

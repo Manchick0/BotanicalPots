@@ -1,2 +1,0 @@
-$execute if block ~ ~ ~ minecraft:flower_pot if entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] run return run function pots:upgrade/apply/apply { upgrade: "$(upgrade)" }
-$execute positioned ^ ^ ^0.1 if entity @s[distance=..5] run function pots:upgrade/apply/trace { upgrade: "$(upgrade)" }

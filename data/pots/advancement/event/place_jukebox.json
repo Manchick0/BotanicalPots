@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "requirement": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:block_state_property",
+                        "block": "minecraft:jukebox"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pots:jukebox/on_place"
+    }
+}

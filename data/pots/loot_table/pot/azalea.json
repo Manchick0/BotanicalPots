@@ -1,0 +1,133 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:charcoal",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"flaming\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:oak_wood",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:oak_log"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:azalea_leaves",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:empty",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"mechanical\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:azalea"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:group",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:glow_berries",
+                                    "weight": 10
+                                },
+                                {
+                                    "type": "minecraft:empty",
+                                    "weight": 90
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"bountiful\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:group",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:glow_berries",
+                                    "weight": 5
+                                },
+                                {
+                                    "type": "minecraft:empty",
+                                    "weight": 95
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "pots:pot/azalea"
+}

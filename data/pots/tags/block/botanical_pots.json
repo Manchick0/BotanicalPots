@@ -11,16 +11,13 @@
         "minecraft:potted_azalea_bush",
         "minecraft:potted_flowering_azalea_bush",
         "minecraft:potted_mangrove_propagule",
-        
         "minecraft:potted_crimson_fungus",
         "minecraft:potted_warped_fungus",
-        
         "minecraft:potted_bamboo",
         "minecraft:potted_cactus",
         "minecraft:potted_red_mushroom",
         "minecraft:potted_brown_mushroom",
         "minecraft:potted_fern",
-
         "minecraft:potted_dandelion",
         "minecraft:potted_poppy",
         "minecraft:potted_blue_orchid",
@@ -33,7 +30,6 @@
         "minecraft:potted_oxeye_daisy",
         "minecraft:potted_cornflower",
         "minecraft:potted_lily_of_the_valley",
-        
         "minecraft:potted_wither_rose"
     ]
 }

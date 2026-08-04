@@ -1,0 +1,47 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:paper",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:item_name": { "translate": "item.pots.flower_bouquet" },
+                                "max_stack_size": 64,
+                                "lore": [
+                                    "",
+                                    [
+                                        { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
+                                        { "text": "\u0001", "font": "pots:controls", "color": "white", "italic": false },
+                                        { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
+                                        { "text": "Unwrap the bouquet, ", "font": "minecraft:default", "color": "gray", "italic": false }
+                                    ],
+                                    "§r§7    obtaining some random ",
+                                    "§r§7    §fcommon flowers§7. ",
+                                    "",
+                                    "§r§9Botanical Pots"
+                                ],
+                                "minecraft:item_model": "pots:flower_bouquet",
+                                "minecraft:custom_data": {
+                                    "identifier": "pots:flower_bouquet"
+                                },
+                                "minecraft:consumable": {
+                                    "consume_seconds": 2147483647,
+                                    "animation": "none"
+                                },
+                                "minecraft:use_effects": {
+                                    "can_sprint": true,
+                                    "speed_multiplier": 1
+                                }
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

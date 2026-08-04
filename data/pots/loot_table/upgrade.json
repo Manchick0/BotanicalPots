@@ -11,7 +11,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"timber\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "timber"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -24,7 +28,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"rich_soil\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "timber"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -37,7 +45,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"shattered\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "shattered"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -50,7 +62,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"bountiful\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "bountiful"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -63,7 +79,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"flaming\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "flaming"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -76,7 +96,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"overgrown\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "overgrown"
+                                    }
+                                }
                             }
                         }
                     ]
@@ -89,20 +113,11 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "nbt": "{data: {upgrade: \"mechanical\"}}"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:loot_table",
-                    "value": "pots:definition/upgrade/ancient",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": "{data: {upgrade: \"ancient\"}}"
+                                "nbt": {
+                                    "data": {
+                                        "upgrade": "mechanical"
+                                    }
+                                }
                             }
                         }
                     ]

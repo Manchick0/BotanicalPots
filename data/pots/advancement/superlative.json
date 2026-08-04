@@ -1,0 +1,20 @@
+{
+    "display": {
+        "title": { "translate": "advancements.pots.superlative" },
+        "description": { "translate": "advancements.pots.superlative.description", "color": "gray" },
+        "announce_to_chat": false,
+        "show_toast": false,
+        "icon": {
+            "id": "minecraft:paper",
+            "components": {
+                "minecraft:item_model": "pots:upgrade/base"
+            }
+        }
+    },
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:tick"
+        }
+    },
+    "parent": "pots:root"
+}

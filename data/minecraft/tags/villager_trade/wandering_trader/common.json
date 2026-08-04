@@ -1,0 +1,10 @@
+{
+    "replace": false,
+    "values": [
+        "pots:wandering_trader/clay_ball",
+        "pots:wandering_trader/timber",
+        "pots:wandering_trader/rich_soil",
+        "pots:wandering_trader/shattered",
+        "pots:wandering_trader/bountiful"
+    ]
+}

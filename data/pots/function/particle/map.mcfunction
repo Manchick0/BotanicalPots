@@ -1,1 +1,0 @@
-$function pots:particle/spawn with storage pots:particles entries.$(plant)

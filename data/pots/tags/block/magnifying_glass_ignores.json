@@ -10,6 +10,8 @@
         "minecraft:tall_dry_grass",
         "minecraft:leaf_litter",
         "minecraft:pink_petals",
-        "minecraft:wildflowers"
+        "minecraft:wildflowers",
+        "minecraft:moss_carpet",
+        "minecraft:pale_moss_carpet"
     ]
 }

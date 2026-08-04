@@ -1,7 +1,16 @@
 {
     "display": {
-        "title": "Lust for Lush",
-        "description": "§7Obtain an §fOvergrown §7upgrade by §fgrowing §7a plant in a biome that suits it.\n\n§8Only a 1% chance.",
+        "title": { "translate": "advancements.pots.upgrade.overgrown" },
+        "description": [
+            { "translate": "advancements.pots.upgrade.overgrown.description", "color": "gray", "with": [
+                {
+                    "translate": "upgrade.pots.overgrown",
+                    "color": "white"
+                }
+            ] },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["1"] }
+        ],
         "icon": {
             "id": "minecraft:paper",
             "count": 1,

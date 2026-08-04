@@ -1,0 +1,31 @@
+{
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": [
+                                    "minecraft:flower_pot"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "#minecraft:axes"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pots:upgrade/remove/on_remove"
+    }
+}

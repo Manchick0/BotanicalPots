@@ -1,0 +1,17 @@
+{
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:paper",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "identifier": "pots:magnifying_glass"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

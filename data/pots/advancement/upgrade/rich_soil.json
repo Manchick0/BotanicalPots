@@ -1,7 +1,16 @@
 {
     "display": {
-        "title": "The Rich Kid",
-        "description": "§7Obtain a §fRich Soil §7upgrade by §fmanually composting §7some plant matter.\n\n§8Only a 20% chance.",
+        "title": { "translate": "advancements.pots.upgrade.rich_soil" },
+        "description": [
+            { "translate": "advancements.pots.upgrade.rich_soil.description", "color": "gray", "with": [
+                {
+                    "translate": "upgrade.pots.rich_soil",
+                    "color": "white"
+                }
+            ] },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["20"] }
+        ],
         "icon": {
             "id": "minecraft:paper",
             "count": 1,
@@ -27,5 +36,5 @@
             }
         }
     },
-    "parent": "pots:upgrade/root"
+    "parent": "pots:superlative"
 }

@@ -3,16 +3,21 @@
 # The main tick event handler. Handles
 # all logic that needs to happen every tick.
 
-# Two ticks
-scoreboard players reset @a[tag=!IsUsingGlass, scores={use=1..}] use
-tag @a[tag=IsUsingGlass, scores={use=1..}] remove IsUsingGlass
+execute as @a[advancements={pots:event/magnifying_glass=false}] run scoreboard players reset @s investigating
+execute as @a[advancements={pots:event/magnifying_glass=true}] at @s run function pots:magnifying_glass/on_investigate
 
-execute as @e[type=minecraft:villager, nbt={VillagerData: {level: 2, profession: "minecraft:mason"}}, tag=!Processed] run function pots:upgrade/bountiful
-execute as @e[type=minecraft:wandering_trader, tag=!Processed] run function pots:wandering_trader/process
-execute unless entity @e[tag=BotanicalPot, type=minecraft:marker] run return 0
-execute as @e[tag=BotanicalPot, type=marker] at @s unless block ~ ~ ~ #flower_pots run loot spawn ~ ~ ~ loot pots:botanical_pot
-execute as @e[tag=BotanicalPot, type=marker] at @s unless block ~ ~ ~ #flower_pots run kill @e[distance=..0.866, tag=BotanicalPotDeco]
-execute as @e[tag=BotanicalPot, type=marker] at @s unless block ~ ~ ~ #flower_pots run kill @s
-execute as @e[tag=BotanicalPot, type=marker] at @s if block ~ ~ ~ flower_pot run function pots:hopper/check
+# Tick down the wrapped items
+execute as @a[scores={bouquetCooldown=1..}] run scoreboard players remove @s bouquetCooldown 1
+execute as @a[scores={braidedCooldown=1..}] run scoreboard players remove @s braidedCooldown 1
 
-execute as @e[tag=BotanicalPot, type=minecraft:marker] at @s if block ~ ~ ~ #pots:botanical_pots at @s run function pots:core/tick
+# Jukebox
+execute as @e[type=minecraft:marker, tag=jukebox] at @s if entity @e[type=minecraft:marker, tag=BotanicalPot, predicate=pots:is_planted, distance=..7.5] \
+    run advancement grant @a[distance=..7.5] only pots:my_singing_pots
+execute as @e[type=minecraft:marker, tag=jukebox] at @s if function pots:jukebox/has_ensemble \
+    run advancement grant @a[distance=..7.5] only pots:woodwind_ensemble
+execute as @e[type=minecraft:marker, tag=jukebox] at @s unless block ~ ~ ~ minecraft:jukebox run kill @s
+
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s unless block ~ ~ ~ #minecraft:flower_pots run loot spawn ~ ~ ~ loot pots:botanical_pot
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s unless block ~ ~ ~ #minecraft:flower_pots run kill @e[distance=..0.866, tag=BotanicalPot]
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ #pots:botanical_pots at @s run function pots:pot/grow

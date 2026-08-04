@@ -1,7 +1,16 @@
 {
     "display": {
-        "title": "Come Along with Me",
-        "description": "§7Grow §fevery sapling §7in a §fsuitable biome§7 for that type using the §fOvergrown Upgrade§7.\n\n§8Only triggers if you're nearby.",
+        "title": { "translate": "advancements.pots.come_along_with_me" },
+        "description": [
+            { "translate": "advancements.pots.come_along_with_me.description", "color": "gray", "with": [
+                {
+                    "translate": "upgrade.pots.overgrown",
+                    "color": "white"
+                }
+            ] },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+        ],
         "frame": "challenge",
         "icon": {
             "id": "minecraft:map"

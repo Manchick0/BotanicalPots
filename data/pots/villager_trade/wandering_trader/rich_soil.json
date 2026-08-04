@@ -1,0 +1,91 @@
+{
+    "wants": {
+        "id": "minecraft:emerald",
+        "count": 3
+    },
+    "gives": {
+        "id": "minecraft:paper",
+        "components": {
+            "minecraft:item_name": { "translate": "item.pots.upgrade" },
+            "minecraft:max_stack_size": 16,
+            "minecraft:lore": [
+                "",
+                [
+                    {
+                        "text": " ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0003",
+                        "font": "pots:controls",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "upgrade.pots.rich_soil",
+                        "color": "gold",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§r§7    Lets you grow plants ",
+                "§r§7    classified as §farrogans ",
+                "§r§7    and §fmollis§7. ",
+                "",
+                [
+                    {
+                        "text": " ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "\u0001",
+                        "font": "pots:controls",
+                        "color": "white",
+                        "italic": false
+                    },
+                    {
+                        "text": " ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "Apply to a ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    },
+                    {
+                        "text": "Botanical Pot",
+                        "font": "minecraft:default",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "text": ". ",
+                        "font": "minecraft:default",
+                        "color": "dark_gray",
+                        "italic": false
+                    }
+                ],
+                "",
+                "§r§9Botanical Pots "
+            ],
+            "minecraft:item_model": "pots:upgrade/rich_soil",
+            "minecraft:custom_data": {
+                "identifier": "pots:upgrade/rich_soil"
+            }
+        }
+    },
+    "max_uses": 4
+}

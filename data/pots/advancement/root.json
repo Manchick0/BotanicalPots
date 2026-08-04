@@ -1,16 +1,12 @@
 {
     "display": {
-        "title": "Botanical Pots",
-        "description": "§7Room Plants for Dummies.",
+        "title": { "translate": "advancements.pots.root" },
+        "description": { "translate": "advancements.pots.root.description", "color": "gray" },
         "background": "minecraft:block/packed_mud",
         "announce_to_chat": false,
         "show_toast": false,
         "icon": {
-            "id": "minecraft:paper",
-            "count": 1,
-            "components": {
-                "item_model": "pots:botanical_pot/base"
-            }
+            "id": "minecraft:flower_pot"
         }
     },
     "criteria": {

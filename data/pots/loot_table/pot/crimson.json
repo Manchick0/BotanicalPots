@@ -1,0 +1,165 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:crimson_hyphae",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:crimson_stem",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:nether_wart_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:empty",
+                    "weight": 3
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:empty",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"mechanical\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:crimson_fungus"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:alternatives",
+                    "children": [
+                        {
+                            "type": "minecraft:group",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:nether_wart",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 1,
+                                                "max": 2
+                                            }
+                                        }
+                                    ],
+                                    "weight": 10
+                                },
+                                {
+                                    "type": "minecraft:empty",
+                                    "weight": 90
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{data: {upgrade: \"bountiful\"}}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:group",
+                            "children": [
+                                {
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:nether_wart",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 1,
+                                                "max": 2
+                                            }
+                                        }
+                                    ],
+                                    "weight": 5
+                                },
+                                {
+                                    "type": "minecraft:empty",
+                                    "weight": 95
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "pots:pot/crimson"
+}

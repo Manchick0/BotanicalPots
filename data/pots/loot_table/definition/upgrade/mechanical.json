@@ -10,18 +10,30 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_name": "Pot Upgrade",
+                                "minecraft:item_name": { "translate": "item.pots.upgrade" },
                                 "minecraft:rarity": "rare",
                                 "minecraft:max_stack_size": 16,
                                 "minecraft:lore": [
                                     "",
-                                    " §r§f§l⭐ §r§6Mechanical ",
+                                    [
+                                        { "text": " ", "font": "minecraft:default", "color": "dark_gray", "italic": false },
+                                        { "text": "\u0003", "font": "pots:controls", "color": "white", "italic": false },
+                                        { "text": " ", "font": "minecraft:default", "color": "dark_gray", "italic": false },
+                                        { "translate": "upgrade.pots.mechanical", "color": "gold", "italic": false }
+                                    ],
                                     "",
-                                    " §7The potted plant §fautomatically ",
-                                    " §freplants §7itself instead of producing ",
-                                    " §7a sapling.",
+                                    "§r§7    §fReplants §7the grown plant ",
+                                    "§r§7    instead of producing a ",
+                                    "§r§7    sapling. ",
                                     "",
-                                    " §8Right-click a §7Botanical Pot §8to apply. ",
+                                    [
+                                        { "text": " ", "font": "minecraft:default", "color": "dark_gray", "italic": false },
+                                        { "text": "\u0001", "font": "pots:controls", "color": "white", "italic": false },
+                                        { "text": " ", "font": "minecraft:default", "color": "dark_gray", "italic": false },
+                                        { "text": "Apply to a ", "font": "minecraft:default", "color": "dark_gray", "italic": false },
+                                        { "text": "Botanical Pot", "font": "minecraft:default", "color": "gray", "italic": false },
+                                        { "text": ". ", "font": "minecraft:default", "color": "dark_gray", "italic": false }
+                                    ],
                                     "",
                                     "§r§9Botanical Pots "
                                 ],

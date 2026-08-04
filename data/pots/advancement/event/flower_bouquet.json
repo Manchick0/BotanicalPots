@@ -1,0 +1,20 @@
+{
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:using_item",
+            "conditions": {
+                "item": {
+                    "items": "minecraft:paper",
+                    "components": {
+                        "minecraft:custom_data": {
+                            "identifier": "pots:flower_bouquet"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pots:unwrap/flower_bouquet"
+    }
+}

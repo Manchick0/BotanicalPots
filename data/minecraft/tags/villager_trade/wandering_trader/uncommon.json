@@ -1,0 +1,8 @@
+{
+    "replace": false,
+    "values": [
+        "pots:wandering_trader/flaming",
+        "pots:wandering_trader/overgrown",
+        "pots:wandering_trader/mechanical"
+    ]
+}

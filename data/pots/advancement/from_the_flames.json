@@ -1,7 +1,16 @@
 {
     "display": {
-        "title": "From the Flames",
-        "description": "§7Try to ignite a §ffungus §7with the §fFlaming Upgrade§7.\n\n§8Only triggers if you're nearby.",
+        "title": { "translate": "advancements.pots.from_the_flames" },
+        "description": [
+            { "translate": "advancements.pots.from_the_flames.description", "color": "gray", "with": [
+                {
+                    "translate": "upgrade.pots.flaming",
+                    "color": "white"
+                }
+            ] },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+        ],
         "icon": {
             "id": "minecraft:crimson_fungus",
             "count": 1

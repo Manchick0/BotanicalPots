@@ -10,16 +10,22 @@
                         {
                             "function": "minecraft:set_components",
                             "components": {
-                                "minecraft:item_name": "Magnifying Glass",
+                                "minecraft:item_name": { "translate": "item.pots.magnifying_glass" },
                                 "max_stack_size": 1,
                                 "lore": [
-                                    "§r§7Investigate plants by examining them",
-                                    "§r§7thoroughly, to learn about their §fSuitable",
-                                    "§r§fBiomes§7, §fSpeed Modifiers§7, and §fTreats.",
                                     "",
-                                    "§r§7You've §frecently §7investigated:",
+                                    [
+                                        { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
+                                        { "text": "\u0001", "font": "pots:controls", "color": "white", "italic": false },
+                                        { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
+                                        { "text": "Investigate plants by examining ", "font": "minecraft:default", "color": "gray", "italic": false }
+                                    ],
+                                    "§r§7    them thoroughly to learn about ",
+                                    "§r§7    their §fproperties§7. ",
                                     "",
-                                    "§r§8Nothing yet...",
+                                    "§r§8 Previous notes: ",
+                                    "",
+                                    "§r§8 None yet... §7Go research!",
                                     "",
                                     "§r§9Botanical Pots"
                                 ],

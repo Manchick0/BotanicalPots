@@ -1,7 +1,7 @@
 {
     "display": {
-        "title": "Defending the Thesis",
-        "description": "§7Investigate §fevery single plant §7with a §fmagnifying glass§7.",
+        "title": { "translate": "advancements.pots.thesis" },
+        "description": { "translate": "advancements.pots.thesis.description", "color": "gray" },
         "frame": "challenge",
         "icon": {
             "id": "minecraft:paper",

@@ -1,7 +1,11 @@
 {
     "display": {
-        "title": "Flowstate",
-        "description": "§7Grow §fa plant §7in a pot §7in under §f2 seconds§7.\n\n§8Only triggers if you're nearby.",
+        "title": { "translate": "advancements.pots.flowstate" },
+        "description": [
+            { "translate": "advancements.pots.flowstate.description", "color": "gray" },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+        ],
         "icon": {
             "id": "minecraft:clock"
         }

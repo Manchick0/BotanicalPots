@@ -1,0 +1,74 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 3
+            },
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:dandelion",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:poppy",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:cornflower",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:oxeye_daisy",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:lily_of_the_valley",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:white_tulip",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:orange_tulip",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:red_tulip",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:pink_tulip",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:allium",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:blue_orchid",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:azure_bluet",
+                    "weight": 1
+                }
+            ]
+        }
+    ]
+}

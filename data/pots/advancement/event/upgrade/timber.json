@@ -1,0 +1,37 @@
+{
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "#pots:stripped_wood"
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": [
+                                "minecraft:wooden_axe",
+                                "minecraft:stone_axe",
+                                "minecraft:iron_axe",
+                                "minecraft:golden_axe",
+                                "minecraft:diamond_axe",
+                                "minecraft:netherite_axe",
+                                "minecraft:air"
+                            ]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pots:upgrade/timber/on_strip"
+    }
+}

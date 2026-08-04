@@ -1,2 +1,0 @@
-execute anchored eyes run function pots:util/trace { body: "if block ~ ~ ~ minecraft:flower_pot if entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866]", onHit: "pots:upgrade/remove/finish" }
-advancement revoke @s only pots:trigger/upgrade/remove

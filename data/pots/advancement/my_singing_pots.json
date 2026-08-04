@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": { "translate": "advancements.pots.my_singing_pots" },
+        "description": [
+            { "translate": "advancements.pots.my_singing_pots.description", "color": "gray" },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+        ],
+        "icon": {
+            "id": "minecraft:jukebox"
+        }
+    },
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pots:root"
+}

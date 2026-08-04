@@ -1,0 +1,25 @@
+{
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:any_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "minecraft:location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:composter",
+                                "state": {
+                                    "level": "0"
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        }
+    },
+    "rewards": {
+        "function": "pots:upgrade/rich_soil/on_compost"
+    }
+}

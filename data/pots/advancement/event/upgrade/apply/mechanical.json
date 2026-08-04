@@ -1,0 +1,34 @@
+{
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:default_block_use",
+            "conditions": {
+                "location": [
+                    {
+                        "condition": "location_check",
+                        "predicate": {
+                            "block": {
+                                "blocks": "minecraft:flower_pot"
+                            }
+                        }
+                    }
+                ],
+                "player": {
+                    "equipment": {
+                        "mainhand": {
+                            "items": "minecraft:paper",
+                            "components": {
+                                "custom_data": {
+                                    "identifier": "pots:upgrade/mechanical"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "pots:upgrade/apply/mechanical"
+    }
+}

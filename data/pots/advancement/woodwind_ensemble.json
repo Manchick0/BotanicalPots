@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": { "translate": "advancements.pots.woodwind_ensemble" },
+        "description": [
+            { "translate": "advancements.pots.woodwind_ensemble.description", "color": "gray" },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+        ],
+        "icon": {
+            "id": "minecraft:note_block"
+        }
+    },
+    "criteria": {
+        "condition": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "pots:my_singing_pots"
+}

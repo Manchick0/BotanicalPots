@@ -1,0 +1,1 @@
+$function pots:particle/spawn with storage pots:particle $(type)

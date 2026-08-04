@@ -1,7 +1,16 @@
 {
     "display": {
-        "title": "Hot Offer",
-        "description": "§7Obtain a §fFlaming §7upgrade §7through some §fpiglin barter§7.\n\n§8Only a 5% chance.",
+        "title": { "translate": "advancements.pots.upgrade.flaming" },
+        "description": [
+            { "translate": "advancements.pots.upgrade.flaming.description", "color": "gray", "with": [
+                {
+                    "translate": "upgrade.pots.flaming",
+                    "color": "white"
+                }
+            ] },
+            { "text": "\n\n", "color": "white" },
+            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["5"] }
+        ],
         "icon": {
             "id": "minecraft:paper",
             "count": 1,
@@ -27,5 +36,5 @@
             }
         }
     },
-    "parent": "pots:upgrade/root"
+    "parent": "pots:superlative"
 }

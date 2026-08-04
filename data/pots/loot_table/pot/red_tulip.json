@@ -1,0 +1,25 @@
+{
+    "type": "minecraft:block",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:red_tulip",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "type": "minecraft:uniform",
+                                "min": 2,
+                                "max": 3
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "random_sequence": "pots:pot/red_tulip"
+}
