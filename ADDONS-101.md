@@ -15,7 +15,7 @@ In order to let other datapacks **inject** their behavior to Botanical Pots, the
 
 An example of such core function is `pots:pot/spawn`. It is responsible for spawning the appropriate loot for the potted plant. If the potted plant wasn't recognized by the `pots:pot/spawn` function, it **delegates** to the functions in the `#pots:on_spawn` tag. By adding a function to the `#pots:on_spawn` tag, we are thus able to spawn loot for an **additonal plant**.
 
-> ![TIP]
+> [!TIP]
 > In order append an entry to a tag, one should create a file at the respective [resource location](https://minecraft.wiki/w/Identifier) in a datapack with `"replace"` set to `false`:
 > ```json
 > {
