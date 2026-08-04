@@ -67,3 +67,53 @@ Similarly, when inserting the loot, we too have to dispatch it based on the curr
 # example/function/on_insert.mcfunction
 $execute if block ~ ~ ~ example:potted_plant run return run loot insert $(position) loot example:pot/plant
 ```
+
+After doing these modification, our plant will **properly grow** when planted in a botanical pot. However, it will not be taken from a hopper yet. To support a hopper, we have to provide another function. Similarly to `#pots:insert`, `#pots:replant` provides a few macro arguments for more convenient work: the `$(position)` and the `$(slot)` to check.
+
+The idea behind the `#pots:replant` functions is to `setblock` the appropriate potted plant based on the item in the provided `$(slot)`. However, unlike previous functions, we have to use `return` to signal whether a recognized item was found in the slot:
+
+```json5
+// pots/tags/function/on_replant.json
+{
+    "replace": false,
+    "values": [
+        "example:on_replant"
+    ]
+}
+```
+
+```mcfunction
+# example/function/on_replant.mcfunction
+$execute if items block $(position) $(slot) example:plant run return run setblock ~ ~ ~ example:potted_plant
+return 0
+```
+
+### Additional Behavior
+
+The above injection points cover the basic Botanical Pots behavior. They let a plant grow, produce loot, and be taken from a hopper. Botanical Pots, however, provides other mechanics related to specific plants that we are yet to introduce.
+
+When growing, a plant displays **particles**. In Botanical Pots, they are usually colored similarly to the plant itself. Once our plant grows, we have the pleasure to dispatch a particle effect through the `#pots:on_particle` tag.
+
+```json5
+// pots/tags/function/on_particle.json
+{
+    "replace": false,
+    "values": [
+        "example:on_particle"
+    ]
+}
+```
+
+```mcfunction
+# example/function/on_particle.mcfunction
+execute if block ~ ~ ~ example:potted_plant run function pots:particle/dispatch { type: "example:potted_plant" }
+```
+
+> [!TIP]
+> Botanical Pots uses the `pots:particle` storage as a registry for the particles, and provides the `pots:particle/dispatch` function as a convenient way to display the particle from the registry.
+>
+> By adding an entry to the registry in a `#minecraft:load` callback, we may utilize the same machinery:
+> ```mcfunction
+> # example/function/load.mcfunction
+> data modify storage pots:particle example:plant set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:moss_block" } }
+> ```
