@@ -27,6 +27,6 @@ execute if block ~ ~ ~ minecraft:potted_brown_mushroom run return run execute if
 execute if block ~ ~ ~ minecraft:potted_fern run return run execute if biome ~ ~ ~ #pots:suitable_for_fern
 execute if block ~ ~ ~ #pots:potted_flowers run return run execute if biome ~ ~ ~ #pots:suitable_for_flower
 
-execute store result score matches var run function #pots:on_suiting_biome
+execute store result score matches var run function #pots:on_matches_biome
 execute unless score matches var matches 0 run return 1
 return 0

@@ -88,9 +88,11 @@ $execute if items block $(position) $(slot) example:plant run return run setbloc
 return 0
 ```
 
-### Additional Behavior
+## Additional Behavior
 
 The above injection points cover the basic Botanical Pots behavior. They let a plant grow, produce loot, and be taken from a hopper. Botanical Pots, however, provides other mechanics related to specific plants that we are yet to introduce.
+
+### Particles
 
 When growing, a plant displays **particles**. In Botanical Pots, they are usually colored similarly to the plant itself. Once our plant grows, we have the pleasure to dispatch a particle effect through the `#pots:on_particle` tag.
 
@@ -110,10 +112,81 @@ execute if block ~ ~ ~ example:potted_plant run function pots:particle/dispatch 
 ```
 
 > [!TIP]
-> Botanical Pots uses the `pots:particle` storage as a registry for the particles, and provides the `pots:particle/dispatch` function as a convenient way to display the particle from the registry.
+> Botanical Pots uses the `pots:particle` storage as a registry for particles, and provides the `pots:particle/dispatch` function as a convenient way to display a particle from the registry.
 >
-> By adding an entry to the registry in a `#minecraft:load` callback, we may utilize the same machinery:
+> By adding an entry to the registry in a `#minecraft:load` callback, we are able to utilize the same machinery:
 > ```mcfunction
 > # example/function/load.mcfunction
 > data modify storage pots:particle example:plant set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:moss_block" } }
 > ```
+
+### Matching Biome
+
+Every plant in Botanical Pots has an associated biome. When growing in that biome, it may produce the **Overgrown** upgrade. Whether the biome suits the plant is determined in through the `#pots:on_matches_biome` tag. In our callback, we use `return` to yield whether or not it matches.
+
+```json5
+// pots/tags/function/on_matches_biome.json
+{
+    "replace": false,
+    "values": [
+        "example:on_matches_biome"
+    ]
+}
+```
+
+```mcfunction
+# example/function/on_matches_biome.mcfunction
+execute if block ~ ~ ~ example:potted_plant run return run execute if biome ~ ~ ~ #example:suitable_for_plant
+return 0
+```
+
+### Modifier
+
+Each plant is categorized as one of five classes: Ingens, Defixus, Vulgaris, Arrogans, and Mollis. The modifier of the plant, among other, modifies the speed at which it grows. A modifier can be assigned to a plant through the `#pots:modifier/potted_*_plants` tags:
+
+```json5
+// pots/tags/block/modifier/potted_arrogans_plants.json
+{
+    "replace": false,
+    "values": [
+        "example:plant"
+    ]
+}
+```
+
+> [!NOTE]
+> Assigning a modifier of `Arrogans` or `Mollis` to a plant makes it automatically require the **Rich Soil** upgrade to grow.
+
+### Investigation
+
+Since we've added a lot of specific behavior to our plant, we may wish to document it through the **Magnifying Glass**. The entry for a plant is determined through
+the `#pots:on_investigate` tag. Similarly to `#pots:on_matching_biome`, we use `return` to yield whether or not the plant was recognized. Botanical Pots recognizes both potted and floor versions of plants:
+
+```json5
+// pots/tags/function/on_investigate.json
+{
+    "replace": false,
+    "values": [
+        "example:on_investigate"
+    ]
+}
+```
+
+```mcfunction
+# example/function/on_investigate.mcfunction
+execute if block ~ ~ ~ example:plant run return run function pots:magnifying_glass/operation/dispatch_investigate { type: "example:plant", name: { translate: "block.example.plant", color: "gray", italic: false }, components: [[ \
+    { text: "\u0001", color: "white", font: "example:biomes", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { translate: "biome.example.biome", color: "white", font: "minecraft:default", italic: false } \
+], [ \
+    { text: "\u0003", color: "white", font: "pots:modifiers", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { text: "Vulgaris", color: "white", font: "minecraft:default", italic: false } \
+], [ \
+    { text: "∅", color: "dark_gray", font: "minecraft:default", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { translate: "item.pots.magnifying_glass.none", color: "gray", font: "minecraft:default", italic: false } \
+]]}
+execute if block ~ ~ ~ example:plant run return run ...
+return 0
+```
