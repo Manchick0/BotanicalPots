@@ -1,14 +1,12 @@
 {
     "display": {
+        "icon": "minecraft:note_block",
         "title": { "translate": "advancements.pots.woodwind_ensemble" },
         "description": [
             { "translate": "advancements.pots.woodwind_ensemble.description", "color": "gray" },
             { "text": "\n\n", "color": "white" },
             { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
-        ],
-        "icon": {
-            "id": "minecraft:note_block"
-        }
+        ]
     },
     "criteria": {
         "condition": {

@@ -24,7 +24,11 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"flaming\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "flaming"
+                                            }
+                                        }
                                     }
                                 }
                             ]
@@ -46,7 +50,11 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "timber"
+                                            }
+                                        }
                                     }
                                 }
                             ]

@@ -1,5 +1,11 @@
 {
     "values": [
+        "minecraft:potted_bamboo",
+        "minecraft:potted_fern",
+        "minecraft:potted_crimson_roots",
+        "minecraft:potted_warped_roots",
+        "minecraft:potted_closed_eyeblossom",
+        "minecraft:potted_open_eyeblossom",
         "#pots:potted_flowers"
     ]
 }

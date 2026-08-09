@@ -30,6 +30,11 @@
         "minecraft:potted_oxeye_daisy",
         "minecraft:potted_cornflower",
         "minecraft:potted_lily_of_the_valley",
-        "minecraft:potted_wither_rose"
+        "minecraft:potted_golden_dandelion",
+        "minecraft:potted_closed_eyeblossom",
+        "minecraft:potted_open_eyeblossom",
+        "minecraft:potted_wither_rose",
+        "minecraft:potted_crimson_roots",
+        "minecraft:potted_warped_roots"
     ]
 }

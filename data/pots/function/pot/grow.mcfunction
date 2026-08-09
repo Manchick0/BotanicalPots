@@ -6,6 +6,7 @@
 execute if data entity @s { data: { upgrade: "shattered" } } run return 0
 execute unless data entity @s { data: { upgrade: "rich_soil" } } if function pots:pot/requires_rich_soil run return 0
 
+# Displaying notes if enjoying music
 execute if function pots:pot/is_enjoying_music store result score attempt var run random value 0..19
 execute if function pots:pot/is_enjoying_music if score attempt var matches 0 align xyz run particle minecraft:note ~0.5 ~0.5 ~0.5 0.15 0.15 0.15 0.5 1 force
 
@@ -22,10 +23,10 @@ execute store result score attempt var run function pots:pot/roll
 execute if score attempt var > speed var run return 0
 
 # Triggering advancements.
-execute if block ~ ~ ~ minecraft:potted_red_mushroom run advancement grant @a[distance=..7.5] only pots:funniest_guy red_mushroom
-execute if block ~ ~ ~ minecraft:potted_brown_mushroom run advancement grant @a[distance=..7.5] only pots:funniest_guy brown_mushroom
-execute if block ~ ~ ~ minecraft:potted_crimson_fungus run advancement grant @a[distance=..7.5] only pots:funniest_guy crimson_fungus
-execute if block ~ ~ ~ minecraft:potted_warped_fungus run advancement grant @a[distance=..7.5] only pots:funniest_guy warped_fungus
+execute if block ~ ~ ~ minecraft:potted_red_mushroom run advancement grant @a[distance=..7.5] only pots:funniest_guy minecraft:red_mushroom
+execute if block ~ ~ ~ minecraft:potted_brown_mushroom run advancement grant @a[distance=..7.5] only pots:funniest_guy minecraft:brown_mushroom
+execute if block ~ ~ ~ minecraft:potted_crimson_fungus run advancement grant @a[distance=..7.5] only pots:funniest_guy minecraft:crimson_fungus
+execute if block ~ ~ ~ minecraft:potted_warped_fungus run advancement grant @a[distance=..7.5] only pots:funniest_guy minecraft:warped_fungus
 
 execute if data entity @s {data: {upgrade: "flaming"}} if block ~ ~ ~ minecraft:potted_crimson_fungus run \
     advancement grant @a[distance=..7.5] only pots:from_the_flames
@@ -34,31 +35,31 @@ execute if data entity @s {data: {upgrade: "flaming"}} if block ~ ~ ~ minecraft:
 
 # Come along with me
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_oak_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_oak run advancement grant @a[distance=..7.5] only pots:come_along_with_me oak
+    if biome ~ ~ ~ #pots:suitable_for_oak_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:oak_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_spruce_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_spruce run advancement grant @a[distance=..7.5] only pots:come_along_with_me spruce
+    if biome ~ ~ ~ #pots:suitable_for_spruce_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:spruce_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_birch_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_birch run advancement grant @a[distance=..7.5] only pots:come_along_with_me birch
+    if biome ~ ~ ~ #pots:suitable_for_birch_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:birch_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_jungle_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_jungle run advancement grant @a[distance=..7.5] only pots:come_along_with_me jungle
+    if biome ~ ~ ~ #pots:suitable_for_jungle_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:jungle_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_acacia_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_acacia run advancement grant @a[distance=..7.5] only pots:come_along_with_me acacia
+    if biome ~ ~ ~ #pots:suitable_for_acacia_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:acacia_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_dark_oak_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_dark_oak run advancement grant @a[distance=..7.5] only pots:come_along_with_me dark_oak
-execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_mangrove_propagule \
-    if biome ~ ~ ~ #pots:suitable_for_mangrove run advancement grant @a[distance=..7.5] only pots:come_along_with_me mangrove
+    if biome ~ ~ ~ #pots:suitable_for_dark_oak_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:dark_oak_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_cherry_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_cherry run advancement grant @a[distance=..7.5] only pots:come_along_with_me cherry
+    if biome ~ ~ ~ #pots:suitable_for_cherry_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:cherry_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_pale_oak_sapling \
-    if biome ~ ~ ~ #pots:suitable_for_pale_oak run advancement grant @a[distance=..7.5] only pots:come_along_with_me pale_oak
+    if biome ~ ~ ~ #pots:suitable_for_pale_oak_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:pale_oak_sapling
+execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_mangrove_propagule \
+    if biome ~ ~ ~ #pots:suitable_for_mangrove_propagule run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:mangrove_propagule
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_azalea_bush \
-    if biome ~ ~ ~ #pots:suitable_for_azalea run advancement grant @a[distance=..7.5] only pots:come_along_with_me azalea
+    if biome ~ ~ ~ #pots:suitable_for_azalea_bush run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:azalea_bush
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_flowering_azalea_bush \
-    if biome ~ ~ ~ #pots:suitable_for_azalea run advancement grant @a[distance=..7.5] only pots:come_along_with_me azalea
+    if biome ~ ~ ~ #pots:suitable_for_azalea_bush run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:flowering_azalea_bush
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_crimson_fungus \
-    if biome ~ ~ ~ #pots:suitable_for_crimson_fungus run advancement grant @a[distance=..7.5] only pots:come_along_with_me crimson
+    if biome ~ ~ ~ #pots:suitable_for_crimson_fungus run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:crimson_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_warped_fungus \
-    if biome ~ ~ ~ #pots:suitable_for_warped_fungus run advancement grant @a[distance=..7.5] only pots:come_along_with_me warped
+    if biome ~ ~ ~ #pots:suitable_for_warped_fungus run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:warped_sapling
 
 # Flowstate + The Ficus
 execute if score @s growTime matches ..40 run advancement grant @a[distance=..7.5] only pots:flowstate

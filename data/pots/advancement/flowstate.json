@@ -1,14 +1,12 @@
 {
     "display": {
+        "icon": "minecraft:clock",
         "title": { "translate": "advancements.pots.flowstate" },
         "description": [
             { "translate": "advancements.pots.flowstate.description", "color": "gray" },
             { "text": "\n\n", "color": "white" },
             { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
-        ],
-        "icon": {
-            "id": "minecraft:clock"
-        }
+        ]
     },
     "criteria": {
         "condition": {

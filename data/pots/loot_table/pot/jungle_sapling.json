@@ -9,7 +9,7 @@
                     "children": [
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:crimson_hyphae",
+                            "name": "minecraft:charcoal",
                             "functions": [
                                 {
                                     "function": "minecraft:set_count",
@@ -24,14 +24,44 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "flaming"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:crimson_stem",
+                            "name": "minecraft:jungle_wood",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                }
+                            ],
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "timber"
+                                            }
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "minecraft:item",
+                            "name": "minecraft:jungle_log",
                             "functions": [
                                 {
                                     "function": "minecraft:set_count",
@@ -51,7 +81,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:nether_wart_block",
+                    "name": "minecraft:jungle_leaves",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -89,7 +119,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:crimson_fungus"
+                            "name": "minecraft:jungle_sapling"
                         }
                     ]
                 }
@@ -106,16 +136,7 @@
                             "children": [
                                 {
                                     "type": "minecraft:item",
-                                    "name": "minecraft:nether_wart",
-                                    "functions": [
-                                        {
-                                            "function": "minecraft:set_count",
-                                            "count": {
-                                                "min": 1,
-                                                "max": 2
-                                            }
-                                        }
-                                    ],
+                                    "name": "minecraft:cocoa_beans",
                                     "weight": 10
                                 },
                                 {
@@ -138,16 +159,7 @@
                             "children": [
                                 {
                                     "type": "minecraft:item",
-                                    "name": "minecraft:nether_wart",
-                                    "functions": [
-                                        {
-                                            "function": "minecraft:set_count",
-                                            "count": {
-                                                "min": 1,
-                                                "max": 2
-                                            }
-                                        }
-                                    ],
+                                    "name": "minecraft:cocoa_beans",
                                     "weight": 5
                                 },
                                 {
@@ -161,5 +173,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/crimson"
+    "random_sequence": "pots:pot/jungle"
 }

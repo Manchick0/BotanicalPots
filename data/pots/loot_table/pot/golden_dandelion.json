@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:wither_rose",
+                    "name": "minecraft:golden_dandelion",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -25,7 +25,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:coal",
+                    "name": "minecraft:gold_nugget",
                     "weight": 5
                 },
                 {
@@ -35,5 +35,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/wither_rose"
+    "random_sequence": "pots:pot/golden_dandelion"
 }

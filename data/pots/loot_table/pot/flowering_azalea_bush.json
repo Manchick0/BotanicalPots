@@ -10,59 +10,40 @@
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:charcoal",
-                            "functions": [
-                                {
-                                    "function": "minecraft:set_count",
-                                    "count": {
-                                        "min": 1,
-                                        "max": 4
-                                    }
-                                }
-                            ],
                             "conditions": [
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"flaming\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "flaming"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:dark_oak_wood",
-                            "functions": [
-                                {
-                                    "function": "minecraft:set_count",
-                                    "count": {
-                                        "min": 1,
-                                        "max": 4
-                                    }
-                                }
-                            ],
+                            "name": "minecraft:oak_wood",
                             "conditions": [
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "timber"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:dark_oak_log",
-                            "functions": [
-                                {
-                                    "function": "minecraft:set_count",
-                                    "count": {
-                                        "min": 1,
-                                        "max": 4
-                                    }
-                                }
-                            ]
+                            "name": "minecraft:oak_log"
                         }
                     ]
                 }
@@ -73,16 +54,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:dark_oak_leaves",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "min": 1,
-                                "max": 4
-                            }
-                        }
-                    ],
+                    "name": "minecraft:flowering_azalea_leaves",
                     "weight": 1
                 },
                 {
@@ -111,7 +83,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:dark_oak_sapling"
+                            "name": "minecraft:flowering_azalea"
                         }
                     ]
                 }
@@ -127,8 +99,8 @@
                             "type": "minecraft:group",
                             "children": [
                                 {
-                                    "type": "minecraft:loot_table",
-                                    "value": "pots:definition/braided_mushrooms",
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:glow_berries",
                                     "weight": 10
                                 },
                                 {
@@ -150,8 +122,8 @@
                             "type": "minecraft:group",
                             "children": [
                                 {
-                                    "type": "minecraft:loot_table",
-                                    "value": "pots:definition/braided_mushrooms",
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:glow_berries",
                                     "weight": 5
                                 },
                                 {
@@ -165,5 +137,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/dark_oak"
+    "random_sequence": "pots:pot/flowering_azalea"
 }

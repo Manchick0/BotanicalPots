@@ -15,27 +15,35 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"flaming\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "flaming"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:oak_wood",
+                            "name": "minecraft:cherry_wood",
                             "conditions": [
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "timber"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:oak_log"
+                            "name": "minecraft:cherry_log"
                         }
                     ]
                 }
@@ -46,7 +54,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:oak_leaves",
+                    "name": "minecraft:cherry_leaves",
                     "weight": 1
                 },
                 {
@@ -75,7 +83,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:oak_sapling"
+                            "name": "minecraft:cherry_sapling"
                         }
                     ]
                 }
@@ -91,8 +99,8 @@
                             "type": "minecraft:group",
                             "children": [
                                 {
-                                    "type": "minecraft:item",
-                                    "name": "minecraft:apple",
+                                    "type": "minecraft:loot_table",
+                                    "value": "pots:definition/flower_bouquet",
                                     "weight": 10
                                 },
                                 {
@@ -114,8 +122,8 @@
                             "type": "minecraft:group",
                             "children": [
                                 {
-                                    "type": "minecraft:item",
-                                    "name": "minecraft:apple",
+                                    "type": "minecraft:loot_table",
+                                    "value": "pots:definition/flower_bouquet",
                                     "weight": 5
                                 },
                                 {
@@ -129,5 +137,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/oak"
+    "random_sequence": "pots:pot/cherry"
 }

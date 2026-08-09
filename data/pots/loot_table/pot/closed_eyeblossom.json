@@ -6,7 +6,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:wither_rose",
+                    "name": "minecraft:closed_eyeblossom",
                     "functions": [
                         {
                             "function": "minecraft:set_count",
@@ -19,21 +19,7 @@
                     ]
                 }
             ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:coal",
-                    "weight": 5
-                },
-                {
-                    "type": "minecraft:empty",
-                    "weight": 95
-                }
-            ]
         }
     ],
-    "random_sequence": "pots:pot/wither_rose"
+    "random_sequence": "pots:pot/closed_eyeblossom"
 }

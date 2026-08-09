@@ -1,5 +1,6 @@
 {
     "display": {
+        "icon": "minecraft:crimson_fungus",
         "title": { "translate": "advancements.pots.from_the_flames" },
         "description": [
             { "translate": "advancements.pots.from_the_flames.description", "color": "gray", "with": [
@@ -10,11 +11,7 @@
             ] },
             { "text": "\n\n", "color": "white" },
             { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
-        ],
-        "icon": {
-            "id": "minecraft:crimson_fungus",
-            "count": 1
-        }
+        ]
     },
     "criteria": {
         "condition": {

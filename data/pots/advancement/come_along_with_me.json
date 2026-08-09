@@ -1,5 +1,6 @@
 {
     "display": {
+        "icon": "minecraft:map",
         "title": { "translate": "advancements.pots.come_along_with_me" },
         "description": [
             { "translate": "advancements.pots.come_along_with_me.description", "color": "gray", "with": [
@@ -11,48 +12,22 @@
             { "text": "\n\n", "color": "white" },
             { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
         ],
-        "frame": "challenge",
-        "icon": {
-            "id": "minecraft:map"
-        }
+        "frame": "goal"
     },
     "criteria": {
-        "oak": {
-            "trigger": "minecraft:impossible"
-        },
-        "spruce": {
-            "trigger": "minecraft:impossible"
-        },
-        "birch": {
-            "trigger": "minecraft:impossible"
-        },
-        "jungle": {
-            "trigger": "minecraft:impossible"
-        },
-        "acacia": {
-            "trigger": "minecraft:impossible"
-        },
-        "dark_oak": {
-            "trigger": "minecraft:impossible"
-        },
-        "mangrove": {
-            "trigger": "minecraft:impossible"
-        },
-        "cherry": {
-            "trigger": "minecraft:impossible"
-        },
-        "pale_oak": {
-            "trigger": "minecraft:impossible"
-        },
-        "azalea": {
-            "trigger": "minecraft:impossible"
-        },
-        "crimson": {
-            "trigger": "minecraft:impossible"
-        },
-        "warped": {
-            "trigger": "minecraft:impossible"
-        }
+        "minecraft:oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:spruce_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:birch_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:jungle_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:acacia_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:dark_oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:mangrove_propagule": { "trigger": "minecraft:impossible" },
+        "minecraft:cherry_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:pale_oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:azalea_bush": { "trigger": "minecraft:impossible" },
+        "minecraft:flowering_azalea_bush": { "trigger": "minecraft:impossible" },
+        "minecraft:crimson_fungus": { "trigger": "minecraft:impossible" },
+        "minecraft:warped_fungus": { "trigger": "minecraft:impossible" }
     },
     "rewards": {
         "experience": 200

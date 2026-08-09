@@ -1,32 +1,24 @@
 {
     "display": {
+        "icon": {
+            "id": "minecraft:paper",
+            "components": {
+                "minecraft:item_model": "pots:braided_mushrooms"
+            }
+        },
         "title": { "translate": "advancements.pots.funniest_guy" },
         "description": [
             { "translate": "advancements.pots.funniest_guy.description", "color": "gray" },
             { "text": "\n\n", "color": "white" },
             { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
         ],
-        "frame": "goal",
-        "icon": {
-            "id": "minecraft:paper",
-            "components": {
-                "minecraft:item_model": "pots:braided_mushrooms"
-            }
-        }
+        "frame": "goal"
     },
     "criteria": {
-        "red_mushroom": {
-            "trigger": "minecraft:impossible"
-        },
-        "brown_mushroom": {
-            "trigger": "minecraft:impossible"
-        },
-        "crimson_fungus": {
-            "trigger": "minecraft:impossible"
-        },
-        "warped_fungus": {
-            "trigger": "minecraft:impossible"
-        }
+        "minecraft:red_mushroom": { "trigger": "minecraft:impossible" },
+        "minecraft:brown_mushroom": { "trigger": "minecraft:impossible" },
+        "minecraft:crimson_fungus": { "trigger": "minecraft:impossible" },
+        "minecraft:warped_fungus": { "trigger": "minecraft:impossible" }
     },
     "rewards": {
         "experience": 50

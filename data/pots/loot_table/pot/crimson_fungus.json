@@ -9,33 +9,42 @@
                     "children": [
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:charcoal",
+                            "name": "minecraft:crimson_hyphae",
+                            "functions": [
+                                {
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 1,
+                                        "max": 2
+                                    }
+                                }
+                            ],
                             "conditions": [
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"flaming\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "timber"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:cherry_wood",
-                            "conditions": [
+                            "name": "minecraft:crimson_stem",
+                            "functions": [
                                 {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                    "function": "minecraft:set_count",
+                                    "count": {
+                                        "min": 1,
+                                        "max": 2
                                     }
                                 }
                             ]
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "name": "minecraft:cherry_log"
                         }
                     ]
                 }
@@ -46,7 +55,16 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:cherry_leaves",
+                    "name": "minecraft:nether_wart_block",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "min": 1,
+                                "max": 2
+                            }
+                        }
+                    ],
                     "weight": 1
                 },
                 {
@@ -75,7 +93,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:cherry_sapling"
+                            "name": "minecraft:crimson_fungus"
                         }
                     ]
                 }
@@ -91,8 +109,17 @@
                             "type": "minecraft:group",
                             "children": [
                                 {
-                                    "type": "minecraft:loot_table",
-                                    "value": "pots:definition/flower_bouquet",
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:nether_wart",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 1,
+                                                "max": 2
+                                            }
+                                        }
+                                    ],
                                     "weight": 10
                                 },
                                 {
@@ -114,8 +141,17 @@
                             "type": "minecraft:group",
                             "children": [
                                 {
-                                    "type": "minecraft:loot_table",
-                                    "value": "pots:definition/flower_bouquet",
+                                    "type": "minecraft:item",
+                                    "name": "minecraft:nether_wart",
+                                    "functions": [
+                                        {
+                                            "function": "minecraft:set_count",
+                                            "count": {
+                                                "min": 1,
+                                                "max": 2
+                                            }
+                                        }
+                                    ],
                                     "weight": 5
                                 },
                                 {
@@ -129,5 +165,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/cherry"
+    "random_sequence": "pots:pot/crimson"
 }

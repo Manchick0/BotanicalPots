@@ -15,27 +15,35 @@
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"flaming\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "flaming"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:oak_wood",
+                            "name": "minecraft:birch_wood",
                             "conditions": [
                                 {
                                     "condition": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
-                                        "nbt": "{data: {upgrade: \"timber\"}}"
+                                        "nbt": {
+                                            "data": {
+                                                "upgrade": "timber"
+                                            }
+                                        }
                                     }
                                 }
                             ]
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:oak_log"
+                            "name": "minecraft:birch_log"
                         }
                     ]
                 }
@@ -46,7 +54,7 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:flowering_azalea_leaves",
+                    "name": "minecraft:birch_leaves",
                     "weight": 1
                 },
                 {
@@ -75,7 +83,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:flowering_azalea"
+                            "name": "minecraft:birch_sapling"
                         }
                     ]
                 }
@@ -92,7 +100,7 @@
                             "children": [
                                 {
                                     "type": "minecraft:item",
-                                    "name": "minecraft:glow_berries",
+                                    "name": "minecraft:honeycomb",
                                     "weight": 10
                                 },
                                 {
@@ -115,7 +123,7 @@
                             "children": [
                                 {
                                     "type": "minecraft:item",
-                                    "name": "minecraft:glow_berries",
+                                    "name": "minecraft:honeycomb",
                                     "weight": 5
                                 },
                                 {
@@ -129,5 +137,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/flowering_azalea"
+    "random_sequence": "pots:pot/birch"
 }

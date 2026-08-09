@@ -20,7 +20,7 @@ An example of such core function is `pots:pot/spawn`. It is responsible for spaw
 
 ## Injection Points
 
-In order for Botanical Pots to support a plant, it has to be recognized by a few select locations throughout the project. First and foremost, the plant has to be added to the `pots:botanical_pots` **block tag**. This lets Botanical Pots know when a flower pot has been planted with a supported plant, and the growth behavior should thus be executed:
+In order for Botanical Pots to support a plant, it has to be recognized by a few select locations throughout the project. First and foremost, the plant has to be added to the `pots:potted_plants` **block tag**. This lets Botanical Pots know when a flower pot has been planted with a supported plant, and the growth behavior should thus be executed:
 
 ```json5
 // pots/tags/block/botanical_pots.json

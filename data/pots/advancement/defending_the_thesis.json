@@ -1,0 +1,50 @@
+{
+    "display": {
+        "icon": "minecraft:paper",
+        "title": { "translate": "advancements.pots.defending_the_thesis" },
+        "description": { "translate": "advancements.pots.defending_the_thesis.description", "color": "gray" },
+        "frame": "goal"
+    },
+    "criteria": {
+        "minecraft:oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:spruce_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:birch_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:jungle_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:acacia_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:dark_oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:cherry_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:pale_oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:azalea_bush": { "trigger": "minecraft:impossible" },
+        "minecraft:flowering_azalea_bush": { "trigger": "minecraft:impossible" },
+        "minecraft:crimson_fungus": { "trigger": "minecraft:impossible" },
+        "minecraft:warped_fungus": { "trigger": "minecraft:impossible" },
+        "minecraft:mangrove": { "trigger": "minecraft:impossible" },
+        "minecraft:cactus": { "trigger": "minecraft:impossible" },
+        "minecraft:brown_mushroom": { "trigger": "minecraft:impossible" },
+        "minecraft:red_mushroom": { "trigger": "minecraft:impossible" },
+        "minecraft:golden_dandelion": { "trigger": "minecraft:impossible" },
+        "minecraft:wither_rose": { "trigger": "minecraft:impossible" },
+        "minecraft:bamboo": { "trigger": "minecraft:impossible" },
+        "minecraft:fern": { "trigger": "minecraft:impossible" },
+        "minecraft:warped_roots": { "trigger": "minecraft:impossible" },
+        "minecraft:crimson_roots": { "trigger": "minecraft:impossible" },
+        "minecraft:closed_eyeblossom": { "trigger": "minecraft:impossible" },
+        "minecraft:open_eyeblossom": { "trigger": "minecraft:impossible" },
+        "minecraft:dandelion": { "trigger": "minecraft:impossible" },
+        "minecraft:poppy": { "trigger": "minecraft:impossible" },
+        "minecraft:blue_orchid": { "trigger": "minecraft:impossible" },
+        "minecraft:allium": { "trigger": "minecraft:impossible" },
+        "minecraft:azure_bluet": { "trigger": "minecraft:impossible" },
+        "minecraft:red_tulip": { "trigger": "minecraft:impossible" },
+        "minecraft:orange_tulip": { "trigger": "minecraft:impossible" },
+        "minecraft:white_tulip": { "trigger": "minecraft:impossible" },
+        "minecraft:pink_tulip": { "trigger": "minecraft:impossible" },
+        "minecraft:oxeye_daisy": { "trigger": "minecraft:impossible" },
+        "minecraft:cornflower": { "trigger": "minecraft:impossible" },
+        "minecraft:lily_of_the_valley": { "trigger": "minecraft:impossible" }
+    },
+    "rewards": {
+        "experience": 200
+    },
+    "parent": "pots:uhm_acshwually"
+}

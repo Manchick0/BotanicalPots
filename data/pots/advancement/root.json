@@ -1,13 +1,11 @@
 {
     "display": {
+        "icon": "minecraft:flower_pot",
         "title": { "translate": "advancements.pots.root" },
         "description": { "translate": "advancements.pots.root.description", "color": "gray" },
         "background": "minecraft:block/packed_mud",
         "announce_to_chat": false,
-        "show_toast": false,
-        "icon": {
-            "id": "minecraft:flower_pot"
-        }
+        "show_toast": false
     },
     "criteria": {
         "condition": {
