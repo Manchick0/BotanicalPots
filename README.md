@@ -42,7 +42,7 @@ Among other specifics, each plant is categorized into one of five classes, somet
 
 ![Music](./music.png)
 
-Have you any heard the rumors that plants enjoy **music**? In the world of Botanical Pots, those rumors turned out to be true! Playing a jukebox near a pot is beneficial for the plant's growth rate.
+Have you ever heard the rumors that plants enjoy **music**? In the world of Botanical Pots, those rumors turned out to be true! Playing a jukebox near a pot is beneficial for the plant's growth rate.
 
 # Upgrading 🪽
 
