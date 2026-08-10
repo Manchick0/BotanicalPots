@@ -4,6 +4,7 @@
 
 [![Support Me](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/manchick)
 [![Discord](https://img.shields.io/badge/Join%20the%20Workshop-Discord-blue?style=flat&logo=discord)](https://discord.gg/ANntBKUPmC)
+[![Sources](https://img.shields.io/badge/View%20the%20Sources-GitHub-white?style=flat&logo=github)](https://github.com/Manchick0/BotanicalPots)
 
 > ‼️ Important
 >
