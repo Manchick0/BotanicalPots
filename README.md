@@ -1,4 +1,4 @@
-![Banner](./banner.png)
+![Banner](https://github.com/Manchick0/BotanicalPots/blob/master/banner.png?raw=true)
 
 # Botanical Pots 🪴
 
@@ -24,7 +24,7 @@ the plant will drop the respective resources. Through _automation_ though, perfe
 
 # Plant Research 🔎
 
-![Research](./research.png)
+![Research](https://github.com/Manchick0/BotanicalPots/blob/master/research.png?raw=true)
 
 Botanical Pots brings a lot of features that differ across various plant types. The above mentioned treats are one of those. The **Magnifying Glass** is a built-in research tool that lets you discover the specifics of each plant. You'll receive one when once you install the data-pack.
 
@@ -40,13 +40,13 @@ Among other specifics, each plant is categorized into one of five classes, somet
 
 # Music Preference 🎶
 
-![Music](./music.png)
+![Music](https://github.com/Manchick0/BotanicalPots/blob/master/music.png?raw=true)
 
 Have you ever heard the rumors that plants enjoy **music**? In the world of Botanical Pots, those rumors turned out to be true! Playing a jukebox near a pot is beneficial for the plant's growth rate.
 
 # Upgrading 🪽
 
-![Upgrading](./upgrading.png)
+![Upgrading](https://github.com/Manchick0/BotanicalPots/blob/master/upgrading.png?raw=true)
 
 Botnaical Pots may be **upraded** through various upgrades. Each upgrade slightly alters some part of the growth cycle. You may, however, only apply one upgrade at once. Choose wisely!
 
@@ -56,7 +56,7 @@ Botnaical Pots may be **upraded** through various upgrades. Each upgrade slightl
 
 # Automation ⚙️
 
-![Automation](./automation.png)
+![Automation](https://github.com/Manchick0/BotanicalPots/blob/master/automation.png?raw=true)
 
 The growth process may further be automated. Placing a container below a Botanical Pot will cause its drops to be inserted inside of it. Similarly, if empty, an item will be taken from a nearby **Hopper**.
 
