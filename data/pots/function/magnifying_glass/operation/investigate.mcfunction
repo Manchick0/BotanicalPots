@@ -10,7 +10,7 @@ data modify storage pots:entry description append value { text: " ", color: "whi
 playsound minecraft:ui.cartography_table.take_result player @a ~ ~ ~
 function pots:magnifying_glass/operation/action/apply_description with storage pots:entry
 function pots:magnifying_glass/operation/action/actionbar with storage pots:entry
-function pots:particle/spawn with storage pots:entry particle
+function pots:particle/create with storage pots:entry particle
 advancement grant @s only pots:uhm_acshwually
 
 return 1

@@ -1,40 +1,66 @@
-!["Botanical Pots" - The title image, showing 5 pots standing in a row.](https://cdn.modrinth.com/data/cached_images/e2c1b072f91f465c233d235d25356699415c4992_0.webp)
+![Banner](./banner.png)
 
-# <center>Botanical Pots 🪴</center>
+# Botanical Pots 🪴
 
 [![Support Me](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Support-yellow?style=flat&logo=buymeacoffee)](https://www.buymeacoffee.com/manchick)
 [![Discord](https://img.shields.io/badge/Join%20the%20Workshop-Discord-blue?style=flat&logo=discord)](https://discord.gg/ANntBKUPmC)
 
-Have you ever felt bored whilst waiting for a plant to grow? Or maybe you're simply not satisfied with how hard it is to automate the process of farming **flowers**, **fungi**, and most importantly - **trees**?. **Botanical Pots** is a quick, yet powerful solution to both of these problems!
+> ‼️ Important
+>
+> **Botanical Pots** is a data-pack that relies on a mandatory resource-pack. The latter may be found on the bottom of the page of the version you wish to download. When installing the project as a mod, the resource-pack will be bundled in the JAR file.
 
-> ⚙️ **Getting Started** </p>
-> To get your hands on a **botanical pot**, simply click a regular one with a **bone meal**. You can then dye the **ornament** and even **upgrade** the pot, but **more on this later**.
+Have you ever felt bored while waiting for a plant to grow? Or maybe you're not satisfied with how hard it is to automate the process of farming flowers, fungi, and most importantly, trees? Botanical Pots is a quick solution to both of these problems!
 
-Botanical Pots allow you to grow trees (and, **if upgraded**, other plants) in a much more _reliable_ way since there's no need to chop down the grown result anymore - such a toolbag! In fact, they even allow you to automate the process **further**.
+> ⚙️ Getting Started
+>
+> To obtain on a Botanical Pot, use a **Bone Meal** on a regular one.
 
-> 👀 **Psst...** </p>
-> Every plant has a small chance of **5%** of dropping a **treat**, this ranges from **apples** to **honeycombs**, just **stay patient**.
+Botanical Pots let you to grow plants in a much more reliable way. Planting one inside is enough to get the process going. Once grown,
+the plant will drop the respective resources. Through _automation_ though, perfection can be achieved.
 
-## <center>Automation ⚙️</center>
+> 👀 Psst...
+> 
+> Most plants have a small chance of dropping a treat. This ranges from **Apples** to **Honeycombs**, just remain patient...
 
-![An example of how to automate a decorative pot.](https://cdn.modrinth.com/data/cached_images/8746fe13b9a183547d24dc4f5f101ef7c21d4255_0.webp)
+# Plant Research 🔎
 
-As said, you're able to fully automate the process of collecting wood. Doing so is even simpler than it might sound. As long as there is **a container below**, all the produced resources will be automatically put there. This even works on modded blocks - it's **as easy as it gets**!
+![Research](./research.png)
 
-Refilling the pot isn't hard either, a simple **hopper** on top will do the trick!
+Botanical Pots brings a lot of features that differ across various plant types. The above mentioned treats are one of those. The **Magnifying Glass** is a built-in research tool that lets you discover the specifics of each plant. You'll receive one when once you install the data-pack.
 
-> 💡 **Good-To-Know** </p>
-> The speed rate of botanical pots is directly influenced by the `randomTickSpeed` gamerule. This also means that setting it to 0 completely disables all pots.
+Among other specifics, each plant is categorized into one of five classes, sometimes called **Modifiers**. The class of a plant tells you its growth rate, the amount of resources it drops, whether it may produce a treat, and whether it's pretentious enough to require a richer soil. How exciting!
 
-## <center>Upgrading 🪽</center>
+| Class    | Growth Rate | Resources | Pretentious | Treats |
+| :------: | :---------: | :-------: | :---------: | :----: |
+| Ingens   | 0.5x        | 1-4x      | ❌          | ✅     |
+| Defixus  | 0.75x       | 1-2x      | ❌          | ✅     |
+| Vulgaris | 1.0x        | 1x        | ❌          | ✅     |
+| Arrogans | 1.5x        | 1-2x      | ✅          | ✅     |
+| Mollis   | 2.0x        | 1-2x      | ✅          | ❌     |
 
-![Upgrading](https://cdn.modrinth.com/data/cached_images/ff3aff84821ff1eba0d0b62517fb23e7d8c55c81_0.webp)
+# Music Preference 🎶
 
-As previously mentioned, pots can be **upgraded** to gain different buffs. To upgrade a pot, use an upgrade on it. 
+![Music](./music.png)
 
-There are two main categories of upgrades, **common** and **rare** ones. Just as always, the **common** ones are easier to get, but provide arguably fewer buffs than **rare** ones.
+Have you any heard the rumors that plants enjoy **music**? In the world of Botanical Pots, those rumors turned out to be true! Playing a jukebox near a pot is beneficial for the plant's growth rate.
 
-There's no need to list all upgrades in a row here, just remember that **whenever you obtain a brick**, all recipes will be added to your recipe book. Just follow it to obtain the upgrade you want!
+# Upgrading 🪽
 
-> 💡 **Good-To-Know** </p>
-> You can grow other plants in pots, but under one single condition: the pot must have the **rich soil** upgrade applied! It's even shown in the image above.
+![Upgrading](./upgrading.png)
+
+Botnaical Pots may be **upraded** through various upgrades. Each upgrade slightly alters some part of the growth cycle. You may, however, only apply one upgrade at once. Choose wisely!
+
+> 👀 Psst...
+>
+> I've heard the **Advancements** tab might contain some information on how to obtain each and every upgrade. If I were you, I'd take a look!
+
+# Automation ⚙️
+
+![Automation](./automation.png)
+
+The growth process may further be automated. Placing a container below a Botanical Pot will cause its drops to be inserted inside of it. Similarly, if empty, an item will be taken from a nearby **Hopper**.
+
+> ⚙️ The recent advances in technology...
+> 
+> Aside from the described automation techniques, a certain **upgrade** may automate the process even further.
+

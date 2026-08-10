@@ -19,5 +19,9 @@ execute as @e[type=minecraft:marker, tag=Jukebox] at @s unless block ~ ~ ~ minec
 
 execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s unless block ~ ~ ~ #minecraft:flower_pots run loot spawn ~ ~ ~ loot pots:botanical_pot
 execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s unless block ~ ~ ~ #minecraft:flower_pots run kill @e[distance=..0.866, tag=BotanicalPot]
-execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check { position: "~ ~1 ~",  facing: "down"  }
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check { position: "~ ~ ~-1", facing: "south" }
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check { position: "~1 ~ ~",  facing: "west"  }
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check { position: "~ ~ ~1",  facing: "north" }
+execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ minecraft:flower_pot run function pots:pot/hopper/check { position: "~-1 ~ ~", facing: "east"  }
 execute as @e[type=minecraft:marker, tag=BotanicalPot] at @s if block ~ ~ ~ #pots:potted_plants at @s run function pots:pot/grow

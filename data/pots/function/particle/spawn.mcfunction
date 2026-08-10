@@ -1,1 +1,0 @@
-$particle $(type)$(options) ~ ~ ~ 0.3 0.3 0.3 0.1 10 normal

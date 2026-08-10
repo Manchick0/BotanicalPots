@@ -1,7 +1,7 @@
 #
 # pots:jukebox/has_ensemble
 # ---
-# Determine whether there are at least 12 planted pots
+# Determine whether at least 12 pots are planted
 # in a 7.5-block radius around the current position.
 #
 execute store result score ensemble var if entity @e[type=minecraft:marker, tag=BotanicalPot, predicate=pots:is_planted, distance=..7.5]

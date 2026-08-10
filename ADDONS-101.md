@@ -12,7 +12,7 @@ This article describes how to work with this facade to add support for a third-p
 
 ## Concept
 
-Most of the logic in a datapack is written in terms of **functions**. Similary to [functions in CS](https://en.wikipedia.org/wiki/Function_(computer_programming)), a function is a reusable unit that contains a serious of **commands** that are run consequtively. Botanical Pots is no exception; it too is written in functions.
+Most of the logic in a datapack is written in terms of **functions**. Similary to [functions in CS](https://en.wikipedia.org/wiki/Function_(computer_programming)), a function is a reusable unit that contains a series of **commands** that are run consequtively. Botanical Pots is no exception; it too is written in functions.
 
 In order to let other datapacks **inject** their behavior to Botanical Pots, the respective core functions use a notion of **function tags**. In datapack terminology, a **tag** is a list of entries of some registry. In our case, it is a list of functions that should additionally be called when a core function runs.
 

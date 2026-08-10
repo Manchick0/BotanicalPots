@@ -1,7 +1,7 @@
 #
-# Replant
-#
-# Take an item from the specified $(slot) of the hopper
+# pots:pot/hopper/replant
+# ---
+# Attempt an item from the specified $(slot) of the hopper
 # at the $(position) and use it to replant the pot.
 #
 $execute if items block $(position) $(slot) minecraft:oak_sapling run return run setblock ~ ~ ~ minecraft:potted_oak_sapling
