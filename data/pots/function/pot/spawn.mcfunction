@@ -14,7 +14,7 @@ execute if block ~ ~ ~ minecraft:potted_acacia_sapling run return run loot spawn
 execute if block ~ ~ ~ minecraft:potted_dark_oak_sapling run return run loot spawn ~ ~ ~ loot pots:pot/dark_oak_sapling
 execute if block ~ ~ ~ minecraft:potted_cherry_sapling run return run loot spawn ~ ~ ~ loot pots:pot/cherry_sapling
 execute if block ~ ~ ~ minecraft:potted_pale_oak_sapling run return run loot spawn ~ ~ ~ loot pots:pot/pale_oak_sapling
-execute if block ~ ~ ~ minecraft:potted_mangrove_propagule run return run loot spawn ~ ~ ~ loot pots:pot/mangrove
+execute if block ~ ~ ~ minecraft:potted_mangrove_propagule run return run loot spawn ~ ~ ~ loot pots:pot/mangrove_propagule
 execute if block ~ ~ ~ minecraft:potted_azalea_bush run return run loot spawn ~ ~ ~ loot pots:pot/azalea_bush
 execute if block ~ ~ ~ minecraft:potted_flowering_azalea_bush run return run loot spawn ~ ~ ~ loot pots:pot/flowering_azalea_bush
 execute if block ~ ~ ~ minecraft:potted_crimson_fungus run return run loot spawn ~ ~ ~ loot pots:pot/crimson_fungus
