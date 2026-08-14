@@ -1,3 +1,11 @@
+# 🪴 Botanical Pots 3.0.2
+
+Greetings!
+
+Apparently I really am bad when it comes to releasing flawless updates. This quick hotfix ensures the jukebox-related advancements are properly awarded.
+
+Enjoy 3.0.x!
+
 # 🪴 Botanical Pots 3.0.1
 
 Greetings!

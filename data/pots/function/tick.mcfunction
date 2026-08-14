@@ -11,9 +11,9 @@ execute as @a[scores={bouquetCooldown=1..}] run scoreboard players remove @s bou
 execute as @a[scores={braidedCooldown=1..}] run scoreboard players remove @s braidedCooldown 1
 
 # Jukebox
-execute as @e[type=minecraft:marker, tag=Jukebox] if data block ~ ~ ~ ticks_since_song_started at @s if entity @e[type=minecraft:marker, tag=BotanicalPot, predicate=pots:is_planted, distance=..7.5] \
+execute as @e[type=minecraft:marker, tag=Jukebox] at @s if data block ~ ~ ~ ticks_since_song_started if entity @e[type=minecraft:marker, tag=BotanicalPot, predicate=pots:is_planted, distance=..7.5] \
     run advancement grant @a[distance=..7.5] only pots:my_singing_pots
-execute as @e[type=minecraft:marker, tag=Jukebox] if data block ~ ~ ~ ticks_since_song_started at @s if function pots:jukebox/has_ensemble \
+execute as @e[type=minecraft:marker, tag=Jukebox] at @s if data block ~ ~ ~ ticks_since_song_started if function pots:jukebox/has_ensemble \
     run advancement grant @a[distance=..7.5] only pots:woodwind_ensemble
 execute as @e[type=minecraft:marker, tag=Jukebox] at @s unless block ~ ~ ~ minecraft:jukebox run kill @s
 
