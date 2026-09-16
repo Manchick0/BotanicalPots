@@ -1,19 +1,19 @@
-$item modify entity @s weapon.mainhand [{ \
-    "function": "minecraft:sequence", \
+$item modify entity @s weapon.mainhand { \
+    "type": "minecraft:sequence", \
     "functions": [ \
         { \
-            function: "minecraft:set_lore", \
-            mode: "replace_section", \
-            lore: [ \
+            "type": "minecraft:set_lore", \
+            "mode": "replace_section", \
+            "lore": [ \
                 ["§r§8 Previous notes on ", $(name), "§r§8: "] \
             ], \
-            offset: 5, \
+            "offset": 5, \
         }, \
         { \
-            function: "minecraft:set_lore", \
-            mode: "replace_section", \
-            lore: [$(description)], \
-            offset: 7, \
+            "type": "minecraft:set_lore", \
+            "mode": "replace_section", \
+            "lore": [$(description)], \
+            "offset": 7, \
         } \
     ] \
-}]
+}
