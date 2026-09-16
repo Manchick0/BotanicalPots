@@ -3,10 +3,9 @@
 Greetings!
 
 The newest **Wilderness Bound** drop was released yesterday. With that, I am happy to release **Botanical Pots 3.1.0** as a complimentary version
-to the drop. Not much has changed! Other than me having to essentially rewrite half a codebase to comply with the new standards, the only notable change in
-**3.1.0** is how your hand will now be swung when interacting with pots in various ways.
+to the drop. Not much has changed! Other than me having to essentially rewrite half a codebase to comply with the new standards, one of two notable changes in **3.1.0** is how your hand will now be swung when interacting with pots in various ways.
 
-Sounds weird? Well, you'll get it once you see it.
+A much more notable change, though, is the _nerf of jukeboxes_. They now only increase the growth rate by 50% instead of the previous 100%.
 
 Not much more to add, enjoy the newest update!
 
