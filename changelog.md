@@ -1,3 +1,15 @@
+# 🪴 Botanical Pots 3.1.0
+
+Greetings!
+
+The newest **Wilderness Bound** drop was released yesterday. With that, I am happy to release **Botanical Pots 3.1.0** as a complimentary version
+to the drop. Not much has changed! Other than me having to essentially rewrite half a codebase to comply with the new standards, the only notable change in
+**3.1.0** is how your hand will now be swung when interacting with pots in various ways.
+
+Sounds weird? Well, you'll get it once you see it.
+
+Not much more to add, enjoy the newest update!
+
 # 🪴 Botanical Pots 3.0.2
 
 Greetings!
