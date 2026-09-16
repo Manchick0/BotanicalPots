@@ -6,40 +6,38 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:paper",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_components",
-                            "components": {
-                                "minecraft:item_name": { "translate": "item.pots.magnifying_glass" },
-                                "max_stack_size": 1,
-                                "lore": [
-                                    "",
-                                    [
-                                        { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
-                                        { "text": "\u0001", "font": "pots:controls", "color": "white", "italic": false },
-                                        { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
-                                        { "text": "Investigate plants by examining ", "font": "minecraft:default", "color": "gray", "italic": false }
-                                    ],
-                                    "§r§7    them thoroughly to learn about ",
-                                    "§r§7    their §fproperties§7. ",
-                                    "",
-                                    "§r§8 Previous notes: ",
-                                    "",
-                                    "§r§8 None yet... §7Go research!",
-                                    "",
-                                    "§r§9Botanical Pots"
+                    "modifier": {
+                        "type": "minecraft:set_components",
+                        "components": {
+                            "minecraft:item_name": { "translate": "item.pots.magnifying_glass" },
+                            "max_stack_size": 1,
+                            "lore": [
+                                "",
+                                [
+                                    { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
+                                    { "text": "\u0001", "font": "pots:controls", "color": "white", "italic": false },
+                                    { "text": " ", "font": "minecraft:default", "color": "gray", "italic": false },
+                                    { "text": "Investigate plants by examining ", "font": "minecraft:default", "color": "gray", "italic": false }
                                 ],
-                                "minecraft:item_model": "pots:magnifying_glass",
-                                "minecraft:custom_data": {
-                                    "identifier": "pots:magnifying_glass"
-                                },
-                                "minecraft:consumable": {
-                                    "consume_seconds": 2147483647,
-                                    "animation": "block"
-                                }
+                                "§r§7    them thoroughly to learn about ",
+                                "§r§7    their §fproperties§7. ",
+                                "",
+                                "§r§8 Previous notes: ",
+                                "",
+                                "§r§8 None yet... §7Go research!",
+                                "",
+                                "§r§9Botanical Pots"
+                            ],
+                            "minecraft:item_model": "pots:magnifying_glass",
+                            "minecraft:custom_data": {
+                                "identifier": "pots:magnifying_glass"
+                            },
+                            "minecraft:consumable": {
+                                "consume_seconds": 2147483647,
+                                "animation": "block"
                             }
                         }
-                    ]
+                    }
                 }
             ]
         }

@@ -6,9 +6,8 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:paper",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_components",
+                    "modifier": {
+                            "type": "minecraft:set_components",
                             "components": {
                                 "minecraft:item_name": { "translate": "item.pots.upgrade" },
                                 "minecraft:max_stack_size": 16,
@@ -42,7 +41,6 @@
                                 }
                             }
                         }
-                    ]
                 }
             ]
         }

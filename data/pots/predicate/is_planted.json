@@ -1,8 +1,8 @@
 {
-    "condition": "minecraft:all_of",
+    "type": "minecraft:all_of",
     "terms": [
         {
-            "condition": "minecraft:location_check",
+            "type": "minecraft:location_check",
             "predicate": {
                 "block": {
                     "blocks": "#pots:potted_plants"
@@ -10,15 +10,15 @@
             }
         },
         {
-            "condition": "minecraft:any_of",
+            "type": "minecraft:any_of",
             "terms": [
                 {
-                    "condition": "minecraft:inverted",
+                    "type": "minecraft:inverted",
                     "term": {
-                        "condition": "minecraft:any_of",
+                        "type": "minecraft:any_of",
                         "terms": [
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "block": {
                                         "blocks": "#pots:modifier/potted_arrogans_plants"
@@ -26,7 +26,7 @@
                                 }
                             },
                             {
-                                "condition": "minecraft:location_check",
+                                "type": "minecraft:location_check",
                                 "predicate": {
                                     "block": {
                                         "blocks": "#pots:modifier/potted_mollis_plants"
@@ -37,7 +37,7 @@
                     }
                 },
                 {
-                    "condition": "minecraft:entity_properties",
+                    "type": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
                         "nbt": {
@@ -50,9 +50,9 @@
             ]
         },
         {
-            "condition": "minecraft:inverted",
+            "type": "minecraft:inverted",
             "term": {
-                "condition": "minecraft:entity_properties",
+                "type": "minecraft:entity_properties",
                 "entity": "this",
                 "predicate": {
                     "nbt": {

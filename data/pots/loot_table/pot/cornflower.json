@@ -7,16 +7,10 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:cornflower",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_count",
-                            "count": {
-                                "type": "minecraft:uniform",
-                                "min": 2,
-                                "max": 3
-                            }
-                        }
-                    ]
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": "pots:modifier/mollis"
+                    }
                 }
             ]
         }

@@ -13,6 +13,8 @@ execute if block ~ ~ ~ minecraft:flower_pot if entity @e[type=minecraft:marker, 
 execute if block ~ ~ ~ minecraft:flower_pot if entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
     align xyz positioned ~0.5 ~0.5 ~0.5 run particle minecraft:item{item: {id: "minecraft:paper", components: { "minecraft:item_model": "pots:upgrade/base" }}} ~ ~ ~ 0.2 0.2 0.2 0 10 normal
 execute if block ~ ~ ~ minecraft:flower_pot if entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
+    run swing @s mainhand
+execute if block ~ ~ ~ minecraft:flower_pot if entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
     run return 0
 
 execute positioned ^ ^ ^0.5 if entity @s[distance=..7.5] run function pots:upgrade/remove/attempt_remove

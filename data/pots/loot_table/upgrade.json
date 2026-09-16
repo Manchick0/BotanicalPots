@@ -6,121 +6,107 @@
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/timber",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "timber"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "timber"
                                 }
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/rich_soil",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "timber"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "rich_soil"
                                 }
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/shattered",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "shattered"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "shattered"
                                 }
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/bountiful",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "bountiful"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "bountiful"
                                 }
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/flaming",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "flaming"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "flaming"
                                 }
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/overgrown",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "overgrown"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "overgrown"
                                 }
                             }
                         }
-                    ]
+                    }
                 },
                 {
                     "type": "minecraft:loot_table",
                     "value": "pots:definition/upgrade/mechanical",
-                    "conditions": [
-                        {
-                            "condition": "minecraft:entity_properties",
-                            "entity": "this",
-                            "predicate": {
-                                "nbt": {
-                                    "data": {
-                                        "upgrade": "mechanical"
-                                    }
+                    "condition": {
+                        "type": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                            "nbt": {
+                                "data": {
+                                    "upgrade": "mechanical"
                                 }
                             }
                         }
-                    ]
+                    }
                 }
             ]
         }

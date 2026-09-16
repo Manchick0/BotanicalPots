@@ -10,36 +10,32 @@
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:charcoal",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "nbt": {
-                                            "data": {
-                                                "upgrade": "flaming"
-                                            }
+                            "condition": {
+                                "type": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": {
+                                        "data": {
+                                            "upgrade": "flaming"
                                         }
                                     }
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:oak_wood",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "nbt": {
-                                            "data": {
-                                                "upgrade": "timber"
-                                            }
+                            "condition": {
+                                "type": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": {
+                                        "data": {
+                                            "upgrade": "timber"
                                         }
                                     }
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:item",
@@ -71,15 +67,13 @@
                     "children": [
                         {
                             "type": "minecraft:empty",
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "nbt": "{data: {upgrade: \"mechanical\"}}"
-                                    }
+                            "condition": {
+                                "type": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{data: {upgrade: \"mechanical\"}}"
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:item",
@@ -108,15 +102,13 @@
                                     "weight": 90
                                 }
                             ],
-                            "conditions": [
-                                {
-                                    "condition": "minecraft:entity_properties",
-                                    "entity": "this",
-                                    "predicate": {
-                                        "nbt": "{data: {upgrade: \"bountiful\"}}"
-                                    }
+                            "condition": {
+                                "type": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": "{data: {upgrade: \"bountiful\"}}"
                                 }
-                            ]
+                            }
                         },
                         {
                             "type": "minecraft:group",

@@ -11,7 +11,7 @@ execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:mark
                 Tags: ["BotanicalPot"] \
             } \
         ], \
-        block_state: { Name: "minecraft:air" }, \
+        block_state: { id: "minecraft:air" }, \
         Tags: ["BotanicalPot"] \
     }
 execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
@@ -19,7 +19,9 @@ execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:mark
 execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
     align xyz positioned ~0.5 ~0.5 ~0.5 run playsound minecraft:block.composter.ready player @a ~ ~ ~
 execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
-    align xyz positioned ~0.5 ~0.5 ~0.5 run item modify entity @s weapon.mainhand pots:decrement_player
+    align xyz positioned ~0.5 ~0.5 ~0.5 run swing @s mainhand
+execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
+    align xyz positioned ~0.5 ~0.5 ~0.5 run item modify entity @s weapon.mainhand pots:consume
 execute if block ~ ~ ~ minecraft:flower_pot unless entity @e[type=minecraft:marker, tag=BotanicalPot, distance=..0.866] \
     align xyz positioned ~0.5 ~0.5 ~0.5 run return run summon minecraft:marker ~ ~ ~ {Tags: ["BotanicalPot"], data: {name: "Botanical Pot", upgrade: "none"}}
     

@@ -3,24 +3,27 @@
         "requirement": {
             "trigger": "minecraft:item_used_on_block",
             "conditions": {
-                "location": [
-                    {
-                        "condition": "minecraft:location_check",
-                        "predicate": {
-                            "block": {
-                                "blocks": "minecraft:jukebox"
-                            }
+                "location": {
+                    "type": "minecraft:location_check",
+                    "predicate": {
+                        "block": {
+                            "blocks": "minecraft:jukebox"
                         }
-                    },
-                    {
-                        "condition": "minecraft:match_tool",
-                        "predicate": {
-                            "predicates": {
-                                "minecraft:jukebox_playable": {}
+                    }
+                },
+                "player": {
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "minecraft:equipment": {
+                            "mainhand": {
+                                "predicates": {
+                                    "minecraft:jukebox_playable": {}
+                                }
                             }
                         }
                     }
-                ]
+                }
             }
         }
     },

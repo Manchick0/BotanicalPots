@@ -10,9 +10,9 @@
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:charcoal",
-                            "conditions": [
+                            "condition": 
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "nbt": {
@@ -22,14 +22,14 @@
                                         }
                                     }
                                 }
-                            ]
+                            
                         },
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:cherry_wood",
-                            "conditions": [
+                            "condition": 
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "nbt": {
@@ -39,7 +39,7 @@
                                         }
                                     }
                                 }
-                            ]
+                            
                         },
                         {
                             "type": "minecraft:item",
@@ -71,15 +71,15 @@
                     "children": [
                         {
                             "type": "minecraft:empty",
-                            "conditions": [
+                            "condition": 
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "nbt": "{data: {upgrade: \"mechanical\"}}"
                                     }
                                 }
-                            ]
+                            
                         },
                         {
                             "type": "minecraft:item",
@@ -108,15 +108,15 @@
                                     "weight": 90
                                 }
                             ],
-                            "conditions": [
+                            "condition": 
                                 {
-                                    "condition": "minecraft:entity_properties",
+                                    "type": "minecraft:entity_properties",
                                     "entity": "this",
                                     "predicate": {
                                         "nbt": "{data: {upgrade: \"bountiful\"}}"
                                     }
                                 }
-                            ]
+                            
                         },
                         {
                             "type": "minecraft:group",
