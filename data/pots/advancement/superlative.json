@@ -7,7 +7,10 @@
             }
         },
         "title": { "translate": "advancements.pots.superlative" },
-        "description": { "translate": "advancements.pots.superlative.description", "color": "gray" },
+        "description": {
+            "translate": "advancements.pots.superlative.description",
+            "color": "gray"
+        },
         "announce_to_chat": false,
         "show_toast": false
     },

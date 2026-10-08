@@ -2,14 +2,22 @@
     "display": {
         "title": { "translate": "advancements.pots.upgrade.overgrown" },
         "description": [
-            { "translate": "advancements.pots.upgrade.overgrown.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.overgrown",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.upgrade.overgrown.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.overgrown",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["1"] }
+            {
+                "translate": "advancements.pots.note.chance",
+                "color": "dark_gray",
+                "with": ["1"]
+            }
         ],
         "icon": {
             "id": "minecraft:paper",

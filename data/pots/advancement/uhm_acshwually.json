@@ -8,7 +8,10 @@
             }
         },
         "title": { "translate": "advancements.pots.uhm_acshwually" },
-        "description": { "translate": "advancements.pots.uhm_acshwually.description", "color": "gray" }
+        "description": {
+            "translate": "advancements.pots.uhm_acshwually.description",
+            "color": "gray"
+        }
     },
     "criteria": {
         "requirement": {

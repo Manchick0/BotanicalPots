@@ -2,7 +2,10 @@
     "display": {
         "icon": "minecraft:paper",
         "title": { "translate": "advancements.pots.defending_the_thesis" },
-        "description": { "translate": "advancements.pots.defending_the_thesis.description", "color": "gray" },
+        "description": {
+            "translate": "advancements.pots.defending_the_thesis.description",
+            "color": "gray"
+        },
         "frame": "goal"
     },
     "criteria": {
@@ -14,8 +17,11 @@
         "minecraft:dark_oak_sapling": { "trigger": "minecraft:impossible" },
         "minecraft:cherry_sapling": { "trigger": "minecraft:impossible" },
         "minecraft:pale_oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:poplar_sapling": { "trigger": "minecraft:impossible" },
         "minecraft:azalea_bush": { "trigger": "minecraft:impossible" },
-        "minecraft:flowering_azalea_bush": { "trigger": "minecraft:impossible" },
+        "minecraft:flowering_azalea_bush": {
+            "trigger": "minecraft:impossible"
+        },
         "minecraft:crimson_fungus": { "trigger": "minecraft:impossible" },
         "minecraft:warped_fungus": { "trigger": "minecraft:impossible" },
         "minecraft:mangrove": { "trigger": "minecraft:impossible" },

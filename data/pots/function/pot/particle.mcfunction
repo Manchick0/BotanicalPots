@@ -15,6 +15,7 @@ execute if block ~ ~ ~ minecraft:potted_dark_oak_sapling run return run function
 execute if block ~ ~ ~ minecraft:potted_cherry_sapling run return run function pots:particle/dispatch { type: "minecraft:cherry_sapling" }
 execute if block ~ ~ ~ minecraft:potted_pale_oak_sapling run return run function pots:particle/dispatch { type: "minecraft:pale_oak_sapling" }
 execute if block ~ ~ ~ minecraft:potted_mangrove_propagule run return run function pots:particle/dispatch { type: "minecraft:mangrove_propagule" }
+execute if block ~ ~ ~ minecraft:potted_poplar_sapling run return run function pots:particle/dispatch { type: "minecraft:poplar_sapling" }
 execute if block ~ ~ ~ minecraft:potted_azalea_bush run return run function pots:particle/dispatch { type: "minecraft:azalea_bush" }
 execute if block ~ ~ ~ minecraft:potted_flowering_azalea_bush run return run function pots:particle/dispatch { type: "minecraft:flowering_azalea_bush" }
 execute if block ~ ~ ~ minecraft:potted_warped_fungus run return run function pots:particle/dispatch { type: "minecraft:warped" }

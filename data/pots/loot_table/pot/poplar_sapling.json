@@ -9,6 +9,17 @@
                     "children": [
                         {
                             "type": "minecraft:item",
+                            "name": "minecraft:poplar_wood",
+                            "condition": {
+                                "type": "minecraft:entity_properties",
+                                "entity": "this",
+                                "predicate": {
+                                    "nbt": { "data": { "upgrade": "timber" } }
+                                }
+                            }
+                        },
+                        {
+                            "type": "minecraft:item",
                             "name": "minecraft:charcoal",
                             "condition": {
                                 "type": "minecraft:entity_properties",
@@ -20,18 +31,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:oak_wood",
-                            "condition": {
-                                "type": "minecraft:entity_properties",
-                                "entity": "this",
-                                "predicate": {
-                                    "nbt": { "data": { "upgrade": "timber" } }
-                                }
-                            }
-                        },
-                        {
-                            "type": "minecraft:item",
-                            "name": "minecraft:oak_log"
+                            "name": "minecraft:poplar_log"
                         }
                     ]
                 }
@@ -42,12 +42,22 @@
             "entries": [
                 {
                     "type": "minecraft:item",
-                    "name": "minecraft:azalea_leaves",
+                    "name": "minecraft:red_poplar_leaves",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:yellow_poplar_leaves",
+                    "weight": 1
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:orange_poplar_leaves",
                     "weight": 1
                 },
                 {
                     "type": "minecraft:empty",
-                    "weight": 3
+                    "weight": 9
                 }
             ]
         },
@@ -71,7 +81,7 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:azalea"
+                            "name": "minecraft:poplar_sapling"
                         }
                     ]
                 }
@@ -88,7 +98,7 @@
                             "children": [
                                 {
                                     "type": "minecraft:item",
-                                    "name": "minecraft:glow_berries",
+                                    "name": "minecraft:shelf_mushroom",
                                     "weight": 10
                                 },
                                 {
@@ -111,7 +121,7 @@
                             "children": [
                                 {
                                     "type": "minecraft:item",
-                                    "name": "minecraft:glow_berries",
+                                    "name": "minecraft:shelf_mushroom",
                                     "weight": 5
                                 },
                                 {
@@ -125,5 +135,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/azalea_bush"
+    "random_sequence": "pots:pot/poplar_sapling"
 }

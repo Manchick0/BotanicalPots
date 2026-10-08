@@ -2,14 +2,22 @@
     "display": {
         "title": { "translate": "advancements.pots.upgrade.rich_soil" },
         "description": [
-            { "translate": "advancements.pots.upgrade.rich_soil.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.rich_soil",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.upgrade.rich_soil.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.rich_soil",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["20"] }
+            {
+                "translate": "advancements.pots.note.chance",
+                "color": "dark_gray",
+                "with": ["20"]
+            }
         ],
         "icon": {
             "id": "minecraft:paper",

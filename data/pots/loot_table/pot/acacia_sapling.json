@@ -14,7 +14,7 @@
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{data: {upgrade: \"timber\"}}"
+                                    "nbt": { "data": { "upgrade": "timber" } }
                                 }
                             }
                         },
@@ -25,7 +25,7 @@
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{data: {upgrade: \"flaming\"}}"
+                                    "nbt": { "data": { "upgrade": "flaming" } }
                                 }
                             }
                         },
@@ -63,7 +63,9 @@
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{data: {upgrade: \"mechanical\"}}"
+                                    "nbt": {
+                                        "data": { "upgrade": "mechanical" }
+                                    }
                                 }
                             }
                         },
@@ -98,7 +100,9 @@
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{data: {upgrade: \"bountiful\"}}"
+                                    "nbt": {
+                                        "data": { "upgrade": "bountiful" }
+                                    }
                                 }
                             }
                         },
@@ -121,5 +125,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/acacia"
+    "random_sequence": "pots:pot/acacia_sapling"
 }

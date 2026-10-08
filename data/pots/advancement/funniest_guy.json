@@ -8,9 +8,15 @@
         },
         "title": { "translate": "advancements.pots.funniest_guy" },
         "description": [
-            { "translate": "advancements.pots.funniest_guy.description", "color": "gray" },
+            {
+                "translate": "advancements.pots.funniest_guy.description",
+                "color": "gray"
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+            {
+                "translate": "advancements.pots.note.nearby",
+                "color": "dark_gray"
+            }
         ],
         "frame": "goal"
     },

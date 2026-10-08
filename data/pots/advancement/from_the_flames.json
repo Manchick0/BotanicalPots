@@ -3,14 +3,21 @@
         "icon": "minecraft:crimson_fungus",
         "title": { "translate": "advancements.pots.from_the_flames" },
         "description": [
-            { "translate": "advancements.pots.from_the_flames.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.flaming",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.from_the_flames.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.flaming",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+            {
+                "translate": "advancements.pots.note.nearby",
+                "color": "dark_gray"
+            }
         ]
     },
     "criteria": {

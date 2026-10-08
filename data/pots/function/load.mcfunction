@@ -4,16 +4,18 @@ scoreboard objectives add bouquetCooldown dummy
 scoreboard objectives add braidedCooldown dummy
 scoreboard objectives add investigating dummy
 
-data modify storage pots:particle minecraft:oak_sapling set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:moss_block" } }
-data modify storage pots:particle minecraft:birch_sapling set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:lime_terracotta" } }
-data modify storage pots:particle minecraft:jungle_sapling set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:cactus" } }
-data modify storage pots:particle minecraft:acacia_sapling set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:moss_block" } }
-data modify storage pots:particle minecraft:dark_oak_sapling set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:green_terracotta" } }
-data modify storage pots:particle minecraft:cherry_sapling set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:pink_concrete" } }
-data modify storage pots:particle minecraft:pale_oak_sapling set value { type: "minecraft:falling_dust", options: { block_state: "light_gray_concrete_powder" } }
-data modify storage pots:particle minecraft:azalea_bush set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:moss_block" } }
-data modify storage pots:particle minecraft:flowering_azalea_bush set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:magenta_terracotta" } }
-data modify storage pots:particle minecraft:mangrove_propagule set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:green_concrete" } }
+data modify storage pots:particle minecraft:oak_sapling set value { type: "minecraft:tinted_leaves", options: { color: 0x59AE30 } }
+data modify storage pots:particle minecraft:birch_sapling set value { type: "minecraft:tinted_leaves", options: { color: 0x80A755 } }
+data modify storage pots:particle minecraft:spruce_sapling set value { type: "minecraft:tinted_leaves", options: { color: 0x619961 } }
+data modify storage pots:particle minecraft:jungle_sapling set value { type: "minecraft:tinted_leaves", options: { color: 0x30bb0b } }
+data modify storage pots:particle minecraft:acacia_sapling set value { type: "minecraft:tinted_leaves", options: { color: 0xAEA42A } }
+data modify storage pots:particle minecraft:dark_oak_sapling set value { type: "minecraft:tinted_leaves", options: { color: 0x59AE30 } }
+data modify storage pots:particle minecraft:cherry_sapling set value { type: "minecraft:cherry_leaves", options: { } }
+data modify storage pots:particle minecraft:pale_oak_sapling set value { type: "minecraft:pale_oak_leaves", options: { } }
+data modify storage pots:particle minecraft:azalea_bush set value { type: "minecraft:tinted_leaves", options: { color: 0x70922d } }
+data modify storage pots:particle minecraft:poplar_sapling set value { type: "minecraft:orange_poplar_leaves", options: {} }
+data modify storage pots:particle minecraft:flowering_azalea_bush set value { type: "minecraft:tinted_leaves", options: { color: 0x70922d } }
+data modify storage pots:particle minecraft:mangrove_propagule set value { type: "minecraft:tinted_leaves", options: { color: 0x8DB127 } }
 data modify storage pots:particle minecraft:crimson_fungus set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:nether_wart_block" } }
 data modify storage pots:particle minecraft:warped_fungus set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:warped_wart_block" } }
 data modify storage pots:particle minecraft:cactus set value { type: "minecraft:falling_dust", options: { block_state: "minecraft:green_concrete" } }

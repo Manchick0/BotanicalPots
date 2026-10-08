@@ -2,14 +2,22 @@
     "display": {
         "title": { "translate": "advancements.pots.upgrade.flaming" },
         "description": [
-            { "translate": "advancements.pots.upgrade.flaming.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.flaming",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.upgrade.flaming.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.flaming",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["5"] }
+            {
+                "translate": "advancements.pots.note.chance",
+                "color": "dark_gray",
+                "with": ["5"]
+            }
         ],
         "icon": {
             "id": "minecraft:paper",

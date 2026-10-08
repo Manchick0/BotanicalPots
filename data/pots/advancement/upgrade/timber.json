@@ -2,14 +2,22 @@
     "display": {
         "title": { "translate": "advancements.pots.upgrade.timber" },
         "description": [
-            { "translate": "advancements.pots.upgrade.timber.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.timber",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.upgrade.timber.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.timber",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["5"] }
+            {
+                "translate": "advancements.pots.note.chance",
+                "color": "dark_gray",
+                "with": ["5"]
+            }
         ],
         "icon": {
             "id": "minecraft:paper",

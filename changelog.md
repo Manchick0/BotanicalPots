@@ -1,3 +1,15 @@
+# 🪴 Botanical Pots 3.1.1
+
+Greetings!
+
+Shortly after the recent **Botanical Pots 3.1.0** release, I've realized the newly added **Poplar Sapling** wasn't included in it, which has (probably) led to a handful of the angriest _flower lovers_ ever. As you can **deduce**, the 3.1.1 release resolves that.
+
+Alongside the poplar sapling, a bunch of changes have been made to the particles that appear once a plant is grown. Most noticeably, all sapling now use the falling leaves particles instead of the previous general "falling dust", which is still the default for all other plants. If a sapling has a dedicated particle, such as `minecraft:cherry_leaves`, they are prioritized too.
+
+Finally, the "Rich Kid" advancement, which has been around for ages has been changed to a wordplay I much more enjoy. This one has been annoying me ever since it was added, since the name was a placeholder that remained.
+
+Enjoy 3.1.1!
+
 # 🪴 Botanical Pots 3.1.0
 
 Greetings!
@@ -34,7 +46,7 @@ I'm aware it's been over a year since we've last received a Botanical Pots updat
 Right off the bat, we're changing the versioning scheme to [SemVer](https://semver.org/). This should lead to more consistency across versions. And so, shall we begin?
 
 > ‼️ Disclaimer
-> 
+>
 > When updating, any existing pots might get broken. It's worth breaking them and placing them back!
 
 ## Rock Band

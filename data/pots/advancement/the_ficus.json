@@ -3,9 +3,15 @@
         "icon": "minecraft:rooted_dirt",
         "title": { "translate": "advancements.pots.the_ficus" },
         "description": [
-            { "translate": "advancements.pots.the_ficus.description", "color": "gray" },
+            {
+                "translate": "advancements.pots.the_ficus.description",
+                "color": "gray"
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+            {
+                "translate": "advancements.pots.note.nearby",
+                "color": "dark_gray"
+            }
         ]
     },
     "criteria": {

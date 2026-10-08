@@ -50,6 +50,8 @@ execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraf
     if biome ~ ~ ~ #pots:suitable_for_cherry_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:cherry_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_pale_oak_sapling \
     if biome ~ ~ ~ #pots:suitable_for_pale_oak_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:pale_oak_sapling
+execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:poplar_sapling \
+    if biome ~ ~ ~ #pots:suitable_for_poplar_sapling run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:poplar_sapling
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_mangrove_propagule \
     if biome ~ ~ ~ #pots:suitable_for_mangrove_propagule run advancement grant @a[distance=..7.5] only pots:come_along_with_me minecraft:mangrove_propagule
 execute if data entity @s {data: {upgrade: "overgrown"}} if block ~ ~ ~ minecraft:potted_azalea_bush \

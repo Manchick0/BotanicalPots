@@ -71,7 +71,9 @@
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{data: {upgrade: \"mechanical\"}}"
+                                    "nbt": {
+                                        "data": { "upgrade": "mechanical" }
+                                    }
                                 }
                             }
                         },
@@ -106,7 +108,9 @@
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
                                 "predicate": {
-                                    "nbt": "{data: {upgrade: \"bountiful\"}}"
+                                    "nbt": {
+                                        "data": { "upgrade": "bountiful" }
+                                    }
                                 }
                             }
                         },
@@ -129,5 +133,5 @@
             ]
         }
     ],
-    "random_sequence": "pots:pot/birch"
+    "random_sequence": "pots:pot/birch_sapling"
 }

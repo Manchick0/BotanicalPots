@@ -2,14 +2,22 @@
     "display": {
         "title": { "translate": "advancements.pots.upgrade.bountiful" },
         "description": [
-            { "translate": "advancements.pots.upgrade.bountiful.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.bountiful",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.upgrade.bountiful.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.bountiful",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["25"] }
+            {
+                "translate": "advancements.pots.note.chance",
+                "color": "dark_gray",
+                "with": ["25"]
+            }
         ],
         "icon": {
             "id": "minecraft:paper",

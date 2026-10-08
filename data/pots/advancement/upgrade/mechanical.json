@@ -2,14 +2,22 @@
     "display": {
         "title": { "translate": "advancements.pots.upgrade.mechanical" },
         "description": [
-            { "translate": "advancements.pots.upgrade.mechanical.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.mechanical",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.upgrade.mechanical.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.mechanical",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.chance", "color": "dark_gray", "with": ["12.5"] }
+            {
+                "translate": "advancements.pots.note.chance",
+                "color": "dark_gray",
+                "with": ["12.5"]
+            }
         ],
         "icon": {
             "id": "minecraft:paper",

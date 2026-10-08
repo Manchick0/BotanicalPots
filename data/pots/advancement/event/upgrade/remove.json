@@ -7,9 +7,7 @@
                     "type": "minecraft:location_check",
                     "predicate": {
                         "block": {
-                            "blocks": [
-                                "minecraft:flower_pot"
-                            ]
+                            "blocks": ["minecraft:flower_pot"]
                         }
                     }
                 },

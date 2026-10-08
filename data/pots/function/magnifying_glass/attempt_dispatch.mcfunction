@@ -222,6 +222,33 @@ execute if block ~ ~ ~ minecraft:potted_pale_oak_sapling run return run function
     { translate: "item.minecraft.resin_clump", color: "white", font: "minecraft:default", italic: false } \
 ]]}
 
+execute if block ~ ~ ~ minecraft:poplar_sapling run return run function pots:magnifying_glass/operation/dispatch_investigate_and_defend { type: "minecraft:poplar_sapling", criterion: "minecraft:poplar_sapling", name: { translate: "block.minecraft.poplar_sapling", color: "gray", italic: false }, components: [[ \
+    { text: "\u0010", color: "white", font: "pots:biomes", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { translate: "biome.minecraft.dappled_forest", color: "white", font: "minecraft:default", italic: false } \
+], [ \
+    { text: "\u0001", color: "white", font: "pots:modifiers", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { text: "Ingens", color: "white", font: "minecraft:default", italic: false } \
+], [ \
+    { text: "\u0011", color: "white", font: "pots:treats", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { translate: "block.minecraft.shelf_mushroom", color: "white", font: "minecraft:default", italic: false } \
+]]}
+execute if block ~ ~ ~ minecraft:potted_poplar_sapling run return run function pots:magnifying_glass/operation/dispatch_investigate_and_defend { type: "minecraft:poplar_sapling", criterion: "minecraft:poplar_sapling", name: { translate: "block.minecraft.poplar_sapling", color: "gray", italic: false }, components: [[ \
+    { text: "\u0010", color: "white", font: "pots:biomes", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { translate: "biome.minecraft.dappled_forest", color: "white", font: "minecraft:default", italic: false } \
+], [ \
+    { text: "\u0001", color: "white", font: "pots:modifiers", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { text: "Ingens", color: "white", font: "minecraft:default", italic: false } \
+], [ \
+    { text: "\u0011", color: "white", font: "pots:treats", italic: false }, \
+    { text: " ", color: "white", font: "minecraft:default", italic: false }, \
+    { translate: "block.minecraft.shelf_mushroom", color: "white", font: "minecraft:default", italic: false } \
+]]}
+
 # Mangrove Propagule
 execute if block ~ ~ ~ minecraft:mangrove_propagule run return run function pots:magnifying_glass/operation/dispatch_investigate_and_defend { type: "minecraft:mangrove_propagule", criterion: "minecraft:mangrove_propagule", name: { translate: "block.minecraft.mangrove_propagule", color: "gray", italic: false }, components: [[ \
     { text: "\u0009", color: "white", font: "pots:biomes", italic: false }, \

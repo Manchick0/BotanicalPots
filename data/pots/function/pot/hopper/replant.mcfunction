@@ -12,6 +12,7 @@ $execute if items block $(position) $(slot) minecraft:acacia_sapling run return 
 $execute if items block $(position) $(slot) minecraft:dark_oak_sapling run return run setblock ~ ~ ~ minecraft:potted_dark_oak_sapling
 $execute if items block $(position) $(slot) minecraft:cherry_sapling run return run setblock ~ ~ ~ minecraft:potted_cherry_sapling
 $execute if items block $(position) $(slot) minecraft:pale_oak_sapling run return run setblock ~ ~ ~ minecraft:potted_pale_oak_sapling
+$execute if items block $(position) $(slot) minecraft:poplar_sapling run return run setblock ~ ~ ~ minecraft:potted_poplar_sapling
 $execute if items block $(position) $(slot) minecraft:azalea run return run setblock ~ ~ ~ minecraft:potted_azalea_bush
 $execute if items block $(position) $(slot) minecraft:flowering_azalea run return run setblock ~ ~ ~ minecraft:potted_flowering_azalea_bush
 $execute if items block $(position) $(slot) minecraft:mangrove_propagule run return run setblock ~ ~ ~ minecraft:potted_mangrove_propagule

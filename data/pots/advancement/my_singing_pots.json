@@ -3,9 +3,15 @@
         "icon": "minecraft:jukebox",
         "title": { "translate": "advancements.pots.my_singing_pots" },
         "description": [
-            { "translate": "advancements.pots.my_singing_pots.description", "color": "gray" },
+            {
+                "translate": "advancements.pots.my_singing_pots.description",
+                "color": "gray"
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+            {
+                "translate": "advancements.pots.note.nearby",
+                "color": "dark_gray"
+            }
         ]
     },
     "criteria": {

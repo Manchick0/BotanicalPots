@@ -8,4 +8,4 @@
 # The intention behind this function is letting one
 # construct a particle generically. See [pots:particle/dispatch]. 
 #
-$particle $(type)$(options) ~ ~ ~ 0.3 0.3 0.3 0.1 10 normal
+$particle $(type)$(options) ~ ~0.15 ~ 0.25 0.15 0.25 0.1 5 normal

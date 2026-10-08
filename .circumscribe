@@ -1,0 +1,16 @@
+def name: |Botanical Pots|
+def version: |3.1.1|
+
+#
+# pack(|1.0.0|)
+# ---
+# Compute the 'pack.mcmeta' contents
+# for the given `version`.
+#
+def pack(version): |{
+    "pack": {
+        "description": "§o*Room plants for dummies*\\n§8@Manchick \| v§7<version>",
+        "max_format": [121, 0],
+        "min_format": [121, 0]
+    }
+}|

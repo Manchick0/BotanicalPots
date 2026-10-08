@@ -15,6 +15,7 @@ execute if block ~ ~ ~ minecraft:potted_acacia_sapling run return run execute if
 execute if block ~ ~ ~ minecraft:potted_dark_oak_sapling run return run execute if biome ~ ~ ~ #pots:suitable_for_dark_oak_sapling
 execute if block ~ ~ ~ minecraft:potted_cherry_sapling run return run execute if biome ~ ~ ~ #pots:suitable_for_cherry_sapling
 execute if block ~ ~ ~ minecraft:potted_pale_oak_sapling run return run execute if biome ~ ~ ~ #pots:suitable_for_pale_oak_sapling
+execute if block ~ ~ ~ minecraft:potted_poplar_sapling run return run execute if biome ~ ~ ~ #pots:suitable_for_poplar_sapling
 execute if block ~ ~ ~ minecraft:potted_mangrove_propagule run return run execute if biome ~ ~ ~ #pots:suitable_for_mangrove_propagule
 execute if block ~ ~ ~ minecraft:potted_azalea_bush run return run execute if biome ~ ~ ~ #pots:suitable_for_azalea_bush
 execute if block ~ ~ ~ minecraft:potted_flowering_azalea_bush run return run execute if biome ~ ~ ~ #pots:suitable_for_azalea_bush

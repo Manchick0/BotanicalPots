@@ -3,14 +3,21 @@
         "icon": "minecraft:map",
         "title": { "translate": "advancements.pots.come_along_with_me" },
         "description": [
-            { "translate": "advancements.pots.come_along_with_me.description", "color": "gray", "with": [
-                {
-                    "translate": "upgrade.pots.overgrown",
-                    "color": "white"
-                }
-            ] },
+            {
+                "translate": "advancements.pots.come_along_with_me.description",
+                "color": "gray",
+                "with": [
+                    {
+                        "translate": "upgrade.pots.overgrown",
+                        "color": "white"
+                    }
+                ]
+            },
             { "text": "\n\n", "color": "white" },
-            { "translate": "advancements.pots.note.nearby", "color": "dark_gray" }
+            {
+                "translate": "advancements.pots.note.nearby",
+                "color": "dark_gray"
+            }
         ],
         "frame": "goal"
     },
@@ -24,8 +31,11 @@
         "minecraft:mangrove_propagule": { "trigger": "minecraft:impossible" },
         "minecraft:cherry_sapling": { "trigger": "minecraft:impossible" },
         "minecraft:pale_oak_sapling": { "trigger": "minecraft:impossible" },
+        "minecraft:poplar_sapling": { "trigger": "minecraft:impossible" },
         "minecraft:azalea_bush": { "trigger": "minecraft:impossible" },
-        "minecraft:flowering_azalea_bush": { "trigger": "minecraft:impossible" },
+        "minecraft:flowering_azalea_bush": {
+            "trigger": "minecraft:impossible"
+        },
         "minecraft:crimson_fungus": { "trigger": "minecraft:impossible" },
         "minecraft:warped_fungus": { "trigger": "minecraft:impossible" }
     },
