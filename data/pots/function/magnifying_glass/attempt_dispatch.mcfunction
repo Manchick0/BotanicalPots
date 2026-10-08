@@ -227,9 +227,9 @@ execute if block ~ ~ ~ minecraft:poplar_sapling run return run function pots:mag
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \
     { translate: "biome.minecraft.dappled_forest", color: "white", font: "minecraft:default", italic: false } \
 ], [ \
-    { text: "\u0001", color: "white", font: "pots:modifiers", italic: false }, \
+    { text: "\u0002", color: "white", font: "pots:modifiers", italic: false }, \
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \
-    { text: "Ingens", color: "white", font: "minecraft:default", italic: false } \
+    { text: "Defixus", color: "white", font: "minecraft:default", italic: false } \
 ], [ \
     { text: "\u0011", color: "white", font: "pots:treats", italic: false }, \
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \
@@ -240,9 +240,9 @@ execute if block ~ ~ ~ minecraft:potted_poplar_sapling run return run function p
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \
     { translate: "biome.minecraft.dappled_forest", color: "white", font: "minecraft:default", italic: false } \
 ], [ \
-    { text: "\u0001", color: "white", font: "pots:modifiers", italic: false }, \
+    { text: "\u0002", color: "white", font: "pots:modifiers", italic: false }, \
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \
-    { text: "Ingens", color: "white", font: "minecraft:default", italic: false } \
+    { text: "Defixus", color: "white", font: "minecraft:default", italic: false } \
 ], [ \
     { text: "\u0011", color: "white", font: "pots:treats", italic: false }, \
     { text: " ", color: "white", font: "minecraft:default", italic: false }, \

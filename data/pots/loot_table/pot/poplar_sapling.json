@@ -10,6 +10,10 @@
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:poplar_wood",
+                            "modifier": {
+                                "type": "minecraft:set_count",
+                                "count": "pots:modifier/defixus"
+                            },
                             "condition": {
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
@@ -21,6 +25,10 @@
                         {
                             "type": "minecraft:item",
                             "name": "minecraft:charcoal",
+                            "modifier": {
+                                "type": "minecraft:set_count",
+                                "count": "pots:modifier/defixus"
+                            },
                             "condition": {
                                 "type": "minecraft:entity_properties",
                                 "entity": "this",
@@ -31,7 +39,11 @@
                         },
                         {
                             "type": "minecraft:item",
-                            "name": "minecraft:poplar_log"
+                            "name": "minecraft:poplar_log",
+                            "modifier": {
+                                "type": "minecraft:set_count",
+                                "count": "pots:modifier/defixus"
+                            }
                         }
                     ]
                 }
@@ -43,16 +55,28 @@
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:red_poplar_leaves",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": "pots:modifier/defixus"
+                    },
                     "weight": 1
                 },
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:yellow_poplar_leaves",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": "pots:modifier/defixus"
+                    },
                     "weight": 1
                 },
                 {
                     "type": "minecraft:item",
                     "name": "minecraft:orange_poplar_leaves",
+                    "modifier": {
+                        "type": "minecraft:set_count",
+                        "count": "pots:modifier/defixus"
+                    },
                     "weight": 1
                 },
                 {
