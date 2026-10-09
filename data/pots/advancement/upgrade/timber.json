@@ -16,7 +16,7 @@
             {
                 "translate": "advancements.pots.note.chance",
                 "color": "dark_gray",
-                "with": ["5"]
+                "with": ["1"]
             }
         ],
         "icon": {

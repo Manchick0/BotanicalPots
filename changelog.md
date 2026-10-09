@@ -1,3 +1,13 @@
+# 🪴 Botanical Pots 3.1.2
+
+Greetings!
+
+Yesterday's release included a crutial bug, which I suspect had even been present in the release before, of almost all upgrades secretely being rich soil. When obtaining an upgrade, you'd just get a rich soil upgrade instead. That should hopefully be resolved.
+
+Alongside the needed fix, the chances for the **Timber** upgrade were reduced from 5% → 1%, the ordering of the actions when unbraiding (e.g. Flower Bouquet) was altered, leading to an overall better experience, and slight capitalization changes in the "Come Along With Me" advancement were made.
+
+Enjoy 3.1.2!
+
 # 🪴 Botanical Pots 3.1.1
 
 Greetings!
